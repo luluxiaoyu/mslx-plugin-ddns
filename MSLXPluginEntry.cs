@@ -12,12 +12,12 @@ public class MSLXPluginEntry : IPlugin
     public string Description => "这是MSLX的示例插件，简单演示了一些插件可实现的功能，可以前往Github查看具体实现~";
     public string Version => "1.1.0";
     public string Icon => "icon.png";
-    public string MinSDKVersion => "1.4.0";
+    public string MinSDKVersion => "1.5.2";
     public string Developer => "luluxiaoyu";
     public string AuthorUrl => "https://mslx.mslmc.cn/plugin-dev/init/start/";
     public string PluginUrl => "https://github.com/MSLTeam/mslx-plugin-demo";
 
-    public async void OnLoad()
+    public async void OnPluginInitialize()
     {
         Instance = this;
         
@@ -85,5 +85,17 @@ public class MSLXPluginEntry : IPlugin
 
     public void OnUnload() {
         SDK.MSLX.Logger.Info("mslx-plugin-demo 卸载成功~");
+    }
+
+    public void OnRegisterEndpoints(IEndpointRouteBuilder endpoints)
+    {
+        // 可以在这里注册高级路由
+        // endpoints.MapHub<Hub>("/api/hubs/plugins/mslx-plugin-demo/demo");
+    }
+
+    public void OnRegisterServices(IServiceCollection services)
+    {
+        // 可以在这里注册服务
+        // services.AddSingleton<DemoManager>();
     }
 }
