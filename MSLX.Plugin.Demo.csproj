@@ -58,7 +58,7 @@
       <GarbageFiles Include="$(OutputPath)$(AssemblyName).deps.json" />
     </ItemGroup>
 
-    <ILRepack Condition="'@(DependenciesToMerge)' != ''" Parallel="true" Internalize="true" InputAssemblies="@(FinalInputAssemblies)" TargetKind="SameAsPrimaryAssembly" OutputFile="$(OutputPath)$(AssemblyName).dll" LibraryPath="$(OutputPath)" />
+    <ILRepack Condition="'@(DependenciesToMerge)' != ''" Parallel="true" Internalize="true"  CopyAttributes="true" InputAssemblies="@(FinalInputAssemblies)" TargetKind="SameAsPrimaryAssembly" OutputFile="$(OutputPath)$(AssemblyName).dll" LibraryPath="$(OutputPath)" />
 
     <Delete Files="@(DependenciesToMerge)" Condition="'@(DependenciesToMerge)' != ''" />
     <Delete Files="@(GarbageFiles)" />

@@ -1,6 +1,9 @@
-﻿using MSLX.SDK;
+﻿using Microsoft.AspNetCore.Mvc.ApplicationParts;
+using MSLX.SDK;
 using MSLX.SDK.Interfaces;
 using Newtonsoft.Json.Linq;
+
+[assembly: ApplicationPart("MSLX.Plugin.Demo")]
 
 namespace MSLX.Plugin.Demo;
 
