@@ -17,7 +17,7 @@ public class MSLXPluginEntry : IPlugin
     public string AuthorUrl => "https://mslx.mslmc.cn/plugin-dev/init/start/";
     public string PluginUrl => "https://github.com/MSLTeam/mslx-plugin-demo";
 
-    public async void OnPluginInitialize()
+    public async void OnPluginInitialize(IServiceProvider serviceProvider)
     {
         Instance = this;
         
