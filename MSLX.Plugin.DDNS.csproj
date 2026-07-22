@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
@@ -9,15 +9,18 @@
     <GenerateDependencyFile>false</GenerateDependencyFile>
     <Generate>false</Generate>
     <DebugType>none</DebugType>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AlibabaCloud.SDK.Alidns20150109" Version="4.5.0" />
     <PackageReference Include="ILRepack.Lib.MSBuild.Task" Version="2.0.44.2">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.Extensions.FileProviders.Embedded" Version="10.0.7" />
-    <PackageReference Include="MSLX.SDK" Version="1.5.4" />
+    <PackageReference Include="MSLX.SDK" Version="1.5.4" ExcludeAssets="runtime" />
+    <PackageReference Include="TencentCloudSDK.Dnspod" Version="3.0.1459" />
   </ItemGroup>
 
   <ItemGroup>
@@ -46,19 +49,20 @@
     </Content>
   </ItemGroup>
 
-  <Target Name="MergeDependencies" AfterTargets="Build" Condition="'$(Configuration)' == 'Release'">
+  <Target Name="MergeDependencies" AfterTargets="Build">
     <ItemGroup>
       <AllDlls Include="$(OutputPath)*.dll" />
-      <DependenciesToMerge Include="@(AllDlls)" Exclude="$(OutputPath)$(AssemblyName).dll" />
+      <DependenciesToMerge Include="@(AllDlls)" Exclude="$(OutputPath)$(AssemblyName).dll;$(OutputPath)MSLX.SDK.dll;$(OutputPath)Newtonsoft.Json.dll;$(OutputPath)Newtonsoft.*.dll;$(OutputPath)Microsoft.*.dll;$(OutputPath)System.*.dll;$(OutputPath)netstandard.dll" />
       <FinalInputAssemblies Include="@(DependenciesToMerge)" />
       <FinalInputAssemblies Include="$(OutputPath)$(AssemblyName).dll" />
 
       <GarbageFiles Include="$(OutputPath)$(AssemblyName).staticwebassets.endpoints.json" />
       <GarbageFiles Include="$(OutputPath)appsettings*.json" />
       <GarbageFiles Include="$(OutputPath)$(AssemblyName).deps.json" />
+      <GarbageFiles Include="$(OutputPath)Newtonsoft.Json.dll" />
     </ItemGroup>
 
-    <ILRepack Condition="'@(DependenciesToMerge)' != ''" Parallel="true" Internalize="true"  CopyAttributes="true" InputAssemblies="@(FinalInputAssemblies)" TargetKind="SameAsPrimaryAssembly" OutputFile="$(OutputPath)$(AssemblyName).dll" LibraryPath="$(OutputPath)" />
+    <ILRepack Condition="'@(DependenciesToMerge)' != ''" Parallel="true" Internalize="false" CopyAttributes="true" InputAssemblies="@(FinalInputAssemblies)" TargetKind="SameAsPrimaryAssembly" OutputFile="$(OutputPath)$(AssemblyName).dll" LibraryPath="$(OutputPath)" />
 
     <Delete Files="@(DependenciesToMerge)" Condition="'@(DependenciesToMerge)' != ''" />
     <Delete Files="@(GarbageFiles)" />
