@@ -1,5 +1,5 @@
 <template>
-  <div class="design-card rounded-2xl glass-card border border-[var(--td-component-border)] shadow-md p-6 text-[var(--td-text-color-primary)]">
+  <div class="design-card rounded-2xl p-6 text-[var(--td-text-color-primary)]">
     
     <!-- Title Area -->
     <div class="flex items-center gap-3 mb-6 pb-4 border-b border-dashed border-[var(--td-border-level-2-color)]">
@@ -74,7 +74,7 @@
           </div>
           <t-switch v-model="config.ipv4.enable" />
         </h3>
-        <div v-if="config.ipv4.enable" class="flex flex-col gap-3 mt-1 p-3 rounded-lg design-card glass-card border border-[var(--td-component-border)]">
+        <div v-if="config.ipv4.enable" class="flex flex-col gap-3 mt-1 p-4 rounded-xl design-card">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
              <div class="flex flex-col gap-1.5">
               <label class="text-xs font-semibold text-[var(--td-text-color-secondary)]">获取方式</label>
@@ -116,7 +116,7 @@
           </div>
           <t-switch v-model="config.ipv6.enable" />
         </h3>
-        <div v-if="config.ipv6.enable" class="flex flex-col gap-3 mt-1 p-3 rounded-lg design-card glass-card border border-[var(--td-component-border)]">
+        <div v-if="config.ipv6.enable" class="flex flex-col gap-3 mt-1 p-4 rounded-xl design-card">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
              <div class="flex flex-col gap-1.5">
               <label class="text-xs font-semibold text-[var(--td-text-color-secondary)]">获取方式</label>
@@ -166,7 +166,7 @@
         </h3>
 
         <!-- Status Card -->
-        <div class="rounded-xl p-4 design-card glass-card border border-[var(--td-component-border)] flex flex-col gap-3 shadow-inner">
+        <div class="rounded-xl p-4 design-card flex flex-col gap-3">
           <div class="flex justify-between items-center mb-2">
             <span class="text-xs text-[var(--td-text-color-secondary)]">DDNS 当前状态</span>
           </div>

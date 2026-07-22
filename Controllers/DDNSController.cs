@@ -3,6 +3,7 @@ using MSLX.SDK;
 using MSLX.Plugin.DDNS.Core;
 using MSLX.Plugin.DDNS.Models;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System.Threading.Tasks;
 
 namespace MSLX.Plugin.DDNS.Controllers;
@@ -14,9 +15,8 @@ public class DDNSController : ControllerBase
     [HttpGet("config")]
     public IActionResult GetConfig()
     {
-        var configStr = MSLXPluginEntry.Instance.Config().ReadConfigKey("settings")?.ToString() ?? "{}";
-        var config = JsonConvert.DeserializeObject<DDNSConfig>(configStr) ?? new DDNSConfig();
-        
+        var config = ConfigHelper.Load();
+
         // 隐藏 Key
         if (!string.IsNullOrEmpty(config.SecretKey))
         {
@@ -29,15 +29,15 @@ public class DDNSController : ControllerBase
     [HttpPost("save-config")]
     public IActionResult SaveConfig([FromBody] DDNSConfig config)
     {
-        var oldConfigStr = MSLXPluginEntry.Instance.Config().ReadConfigKey("settings")?.ToString() ?? "{}";
-        var oldConfig = JsonConvert.DeserializeObject<DDNSConfig>(oldConfigStr) ?? new DDNSConfig();
+        var oldConfig = ConfigHelper.Load();
         
         if (string.IsNullOrEmpty(config.SecretKey) || config.SecretKey == "******")
         {
             config.SecretKey = oldConfig.SecretKey;
         }
 
-        MSLXPluginEntry.Instance.Config().WriteConfigKey("settings", JsonConvert.SerializeObject(config));
+        ConfigHelper.Save(config);
+
         DDNSLogger.LogInfo("插件配置已保存", toSystemLog: true);
         return Ok(new { msg = "success" });
     }

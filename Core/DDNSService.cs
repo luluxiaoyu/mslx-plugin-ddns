@@ -5,6 +5,7 @@ using Microsoft.Extensions.Hosting;
 using MSLX.Plugin.DDNS.Models;
 using MSLX.Plugin.DDNS.Core.Providers;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using MSLX.SDK;
 
 namespace MSLX.Plugin.DDNS.Core;
@@ -24,8 +25,7 @@ public class DDNSService : BackgroundService
         
         try
         {
-            var configStr = MSLXPluginEntry.Instance.Config().ReadConfigKey("settings")?.ToString() ?? "{}";
-            var config = JsonConvert.DeserializeObject<DDNSConfig>(configStr) ?? new DDNSConfig();
+            var config = ConfigHelper.Load();
             
             IDNSProvider provider = config.Provider switch
             {
@@ -155,8 +155,7 @@ public class DDNSService : BackgroundService
     {
         while (!stoppingToken.IsCancellationRequested)
         {
-            var configStr = MSLXPluginEntry.Instance.Config().ReadConfigKey("settings")?.ToString() ?? "{}";
-            var config = JsonConvert.DeserializeObject<DDNSConfig>(configStr) ?? new DDNSConfig();
+            var config = ConfigHelper.Load();
             
             if (!string.IsNullOrEmpty(config.SecretId) && !string.IsNullOrEmpty(config.SecretKey))
             {
