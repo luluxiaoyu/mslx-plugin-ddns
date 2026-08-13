@@ -38,14 +38,16 @@
                 <t-option label="DNSPod (Token)" value="dnspod" />
                 <t-option label="腾讯云" value="tencentcloud" />
                 <t-option label="阿里云" value="aliyun" />
+                <t-option label="Cloudflare" value="cloudflare" />
+                <t-option label="华为云" value="huaweicloud" />
               </t-select>
             </div>
             <div class="flex flex-col gap-1.5">
-              <label class="text-xs font-semibold text-[var(--td-text-color-secondary)]">Secret ID / Token ID</label>
+              <label class="text-xs font-semibold text-[var(--td-text-color-secondary)]">{{ idLabel }}</label>
               <t-input v-model="config.secretId" placeholder="输入 ID" clearable />
             </div>
             <div class="flex flex-col gap-1.5">
-              <label class="text-xs font-semibold text-[var(--td-text-color-secondary)]">Secret Key / Token Value</label>
+              <label class="text-xs font-semibold text-[var(--td-text-color-secondary)]">{{ keyLabel }}</label>
               <t-input 
                 v-model="config.secretKey" 
                 type="password" 
@@ -251,7 +253,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from 'vue';
+import { ref, computed, onMounted, onUnmounted } from 'vue';
 import { MessagePlugin } from 'tdesign-vue-next';
 import {
   SettingIcon,
@@ -289,6 +291,24 @@ interface DDNSStatus {
 }
 
 const BASE_URL = '/api/plugins/mslx-plugin-ddns/ddns';
+
+const idLabel = computed(() => {
+  switch(config.value.provider) {
+    case 'dnspod': return 'Token ID';
+    case 'cloudflare': return '账号邮箱 (仅用Token则留空)';
+    case 'huaweicloud': return 'Access Key Id';
+    default: return 'SecretId / AccessKeyId';
+  }
+});
+
+const keyLabel = computed(() => {
+  switch(config.value.provider) {
+    case 'dnspod': return 'Token';
+    case 'cloudflare': return 'Global API Key / API Token';
+    case 'huaweicloud': return 'Secret Access Key';
+    default: return 'SecretKey / AccessKeySecret';
+  }
+});
 
 const config = ref<DDNSConfig>({
   provider: 'dnspod',

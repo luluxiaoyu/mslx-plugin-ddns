@@ -32,6 +32,8 @@ public class DDNSService : BackgroundService
                 "dnspod" => new DNSPodProvider(config.SecretId, config.SecretKey),
                 "tencentcloud" => new TencentCloudProvider(config.SecretId, config.SecretKey),
                 "aliyun" => new AliyunProvider(config.SecretId, config.SecretKey),
+                "cloudflare" => new CloudflareProvider(config.SecretId, config.SecretKey),
+                "huaweicloud" => new HuaweiCloudProvider(config.SecretId, config.SecretKey),
                 _ => null
             };
 

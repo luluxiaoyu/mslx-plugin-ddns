@@ -1,68 +1,68 @@
-(function(){"use strict";try{if(typeof document<"u"){var a=document.createElement("style");a.appendChild(document.createTextNode("@keyframes t-spin{0%{transform:rotate(0)}to{transform:rotate(360deg)}}.t-icon{display:inline-block;vertical-align:middle;width:1em;height:1em}.t-icon:before{font-family:unset}.t-icon-loading{animation:t-spin 1s linear infinite}.t-icon.t-size-s,i.t-size-s{font-size:14px}.t-icon.t-size-m,i.t-size-m{font-size:16px}.t-icon.t-size-l,i.t-size-l{font-size:18px}@unocss;.bg-primary-light[data-v-133b61a8]{background-color:color-mix(in srgb,var(--td-brand-color) 10%,transparent)}.grid[data-v-133b61a8]{display:grid}.grid-cols-1[data-v-133b61a8]{grid-template-columns:repeat(1,minmax(0,1fr))}.m-0[data-v-133b61a8]{margin:0}.mb-2[data-v-133b61a8]{margin-bottom:.5rem}.mb-6[data-v-133b61a8]{margin-bottom:1.5rem}.ml-auto[data-v-133b61a8]{margin-left:auto}.mt-1[data-v-133b61a8]{margin-top:.25rem}.mt-2[data-v-133b61a8]{margin-top:.5rem}.mt-3[data-v-133b61a8]{margin-top:.75rem}.mt-auto[data-v-133b61a8]{margin-top:auto}.h-32[data-v-133b61a8]{height:8rem}.h-6[data-v-133b61a8]{height:1.5rem}.w-1\\.5[data-v-133b61a8]{width:.375rem}.w-1\\/3[data-v-133b61a8]{width:33.3333333333%}.w-full[data-v-133b61a8]{width:100%}.flex[data-v-133b61a8]{display:flex}.flex-col[data-v-133b61a8]{flex-direction:column}@keyframes pulse-133b61a8{0%,to{opacity:1}50%{opacity:.5}}.animate-pulse[data-v-133b61a8]{animation:pulse-133b61a8 2s cubic-bezier(.4,0,.6,1) infinite}.cursor-pointer[data-v-133b61a8]{cursor:pointer}.select-text[data-v-133b61a8]{-webkit-user-select:text;user-select:text}.items-center[data-v-133b61a8]{align-items:center}.justify-end[data-v-133b61a8]{justify-content:flex-end}.justify-center[data-v-133b61a8]{justify-content:center}.justify-between[data-v-133b61a8]{justify-content:space-between}.gap-1[data-v-133b61a8]{gap:.25rem}.gap-1\\.5[data-v-133b61a8]{gap:.375rem}.gap-2[data-v-133b61a8]{gap:.5rem}.gap-2\\.5[data-v-133b61a8]{gap:.625rem}.gap-3[data-v-133b61a8]{gap:.75rem}.gap-4[data-v-133b61a8]{gap:1rem}.gap-6[data-v-133b61a8]{gap:1.5rem}.overflow-y-auto[data-v-133b61a8]{overflow-y:auto}.whitespace-pre-wrap[data-v-133b61a8]{white-space:pre-wrap}.break-all[data-v-133b61a8]{word-break:break-all}.border[data-v-133b61a8]{border-width:1px}.border-b[data-v-133b61a8]{border-bottom-width:1px}.border-t[data-v-133b61a8]{border-top-width:1px}.border-\\[var\\(--td-border-level-2-color\\)\\][data-v-133b61a8]{border-color:var(--td-border-level-2-color)}.border-\\[var\\(--td-component-border\\)\\][data-v-133b61a8]{border-color:var(--td-component-border)}.border-red-200\\/50[data-v-133b61a8]{border-color:#fecaca80}.border-zinc-200\\/60[data-v-133b61a8]{border-color:#e4e4e799}.border-zinc-700\\/40[data-v-133b61a8]{border-color:#3f3f4666}.border-zinc-800\\/50[data-v-133b61a8]{border-color:#27272a80}.dark .dark\\:border-red-900\\/30[data-v-133b61a8]{border-color:#7f1d1d4d}.dark .dark\\:border-zinc-700\\/60[data-v-133b61a8]{border-color:#3f3f4699}.rounded-2xl[data-v-133b61a8]{border-radius:1rem}.rounded-full[data-v-133b61a8]{border-radius:9999px}.rounded-lg[data-v-133b61a8]{border-radius:.5rem}.rounded-xl[data-v-133b61a8]{border-radius:.75rem}.border-dashed[data-v-133b61a8]{border-style:dashed}.last\\:border-none[data-v-133b61a8]:last-child{border-style:none}.bg-\\[var\\(--color-primary\\)\\][data-v-133b61a8]{background-color:var(--color-primary)}.bg-red-50[data-v-133b61a8]{--un-bg-opacity:1;background-color:rgb(254 242 242 / var(--un-bg-opacity))}.bg-zinc-900\\/90[data-v-133b61a8]{background-color:#18181be6}.dark .dark\\:bg-red-950\\/20[data-v-133b61a8]{background-color:#450a0a33}.p-2[data-v-133b61a8]{padding:.5rem}.p-3[data-v-133b61a8]{padding:.75rem}.p-4[data-v-133b61a8]{padding:1rem}.p-6[data-v-133b61a8]{padding:1.5rem}.px-6[data-v-133b61a8]{padding-left:1.5rem;padding-right:1.5rem}.py-0\\.5[data-v-133b61a8]{padding-top:.125rem;padding-bottom:.125rem}.py-2[data-v-133b61a8]{padding-top:.5rem;padding-bottom:.5rem}.py-4[data-v-133b61a8]{padding-top:1rem;padding-bottom:1rem}.pb-4[data-v-133b61a8]{padding-bottom:1rem}.pt-3[data-v-133b61a8]{padding-top:.75rem}.pt-4[data-v-133b61a8]{padding-top:1rem}.text-center[data-v-133b61a8]{text-align:center}.text-\\[10px\\][data-v-133b61a8]{font-size:10px}.text-\\[11px\\][data-v-133b61a8]{font-size:11px}.text-lg[data-v-133b61a8]{font-size:1.125rem;line-height:1.75rem}.text-sm[data-v-133b61a8]{font-size:.875rem;line-height:1.25rem}.text-xs[data-v-133b61a8]{font-size:.75rem;line-height:1rem}.dark .dark\\:text-red-400[data-v-133b61a8],.text-red-400[data-v-133b61a8]{--un-text-opacity:1;color:rgb(248 113 113 / var(--un-text-opacity))}.text-\\[var\\(--color-primary\\)\\][data-v-133b61a8]{color:var(--color-primary)}.text-\\[var\\(--color-success\\)\\][data-v-133b61a8]{color:var(--color-success)}.text-\\[var\\(--td-text-color-placeholder\\)\\][data-v-133b61a8]{color:var(--td-text-color-placeholder)}.text-\\[var\\(--td-text-color-primary\\)\\][data-v-133b61a8]{color:var(--td-text-color-primary)}.text-\\[var\\(--td-text-color-secondary\\)\\][data-v-133b61a8]{color:var(--td-text-color-secondary)}.text-emerald-400[data-v-133b61a8]{--un-text-opacity:1;color:rgb(52 211 153 / var(--un-text-opacity))}.text-red-500[data-v-133b61a8]{--un-text-opacity:1;color:rgb(239 68 68 / var(--un-text-opacity))}.text-red-600[data-v-133b61a8]{--un-text-opacity:1;color:rgb(220 38 38 / var(--un-text-opacity))}.text-zinc-300[data-v-133b61a8]{--un-text-opacity:1;color:rgb(212 212 216 / var(--un-text-opacity))}.text-zinc-500[data-v-133b61a8]{--un-text-opacity:1;color:rgb(113 113 122 / var(--un-text-opacity))}.hover\\:text-\\[var\\(--color-primary\\)\\][data-v-133b61a8]:hover{color:var(--color-primary)}.font-bold[data-v-133b61a8]{font-weight:700}.font-medium[data-v-133b61a8]{font-weight:500}.font-semibold[data-v-133b61a8]{font-weight:600}.leading-normal[data-v-133b61a8]{line-height:1.5}.leading-relaxed[data-v-133b61a8]{line-height:1.625}.tracking-tight[data-v-133b61a8]{letter-spacing:-.025em}.font-mono[data-v-133b61a8]{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}.opacity-90[data-v-133b61a8]{opacity:.9}.shadow-\\[0_0_8px_var\\(--color-primary-light\\)\\][data-v-133b61a8]{--un-shadow:0 0 8px var(--un-shadow-color, var(--color-primary-light));box-shadow:var(--un-ring-offset-shadow),var(--un-ring-shadow),var(--un-shadow)}.shadow-inner[data-v-133b61a8]{--un-shadow:inset 0 2px 4px 0 var(--un-shadow-color, rgb(0 0 0 / .05));box-shadow:var(--un-ring-offset-shadow),var(--un-ring-shadow),var(--un-shadow)}.shadow-md[data-v-133b61a8]{--un-shadow:var(--un-shadow-inset) 0 4px 6px -1px var(--un-shadow-color, rgb(0 0 0 / .1)),var(--un-shadow-inset) 0 2px 4px -2px var(--un-shadow-color, rgb(0 0 0 / .1));box-shadow:var(--un-ring-offset-shadow),var(--un-ring-shadow),var(--un-shadow)}.shadow-sm[data-v-133b61a8]{--un-shadow:var(--un-shadow-inset) 0 1px 2px 0 var(--un-shadow-color, rgb(0 0 0 / .05));box-shadow:var(--un-ring-offset-shadow),var(--un-ring-shadow),var(--un-shadow)}.light .light-outline[data-v-133b61a8],.outline[data-v-133b61a8]{outline-style:solid}.transition-colors[data-v-133b61a8]{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}@media(min-width:768px){.md\\:grid-cols-2[data-v-133b61a8]{grid-template-columns:repeat(2,minmax(0,1fr))}.md\\:grid-cols-3[data-v-133b61a8]{grid-template-columns:repeat(3,minmax(0,1fr))}.md\\:w-auto[data-v-133b61a8]{width:auto}}@media(min-width:1024px){.lg\\:col-span-2[data-v-133b61a8]{grid-column:span 2/span 2}.lg\\:col-span-3[data-v-133b61a8]{grid-column:span 3/span 3}.lg\\:grid-cols-5[data-v-133b61a8]{grid-template-columns:repeat(5,minmax(0,1fr))}.lg\\:border-l[data-v-133b61a8]{border-left-width:1px}.lg\\:border-t-0[data-v-133b61a8]{border-top-width:0px}.lg\\:pl-6[data-v-133b61a8]{padding-left:1.5rem}.lg\\:pt-0[data-v-133b61a8]{padding-top:0}}")),document.head.appendChild(a)}}catch(t){console.error("vite-plugin-css-injected-by-js",t)}})();
-function Q(t) {
+(function(){"use strict";try{if(typeof document<"u"){var a=document.createElement("style");a.appendChild(document.createTextNode("@keyframes t-spin{0%{transform:rotate(0)}to{transform:rotate(360deg)}}.t-icon{display:inline-block;vertical-align:middle;width:1em;height:1em}.t-icon:before{font-family:unset}.t-icon-loading{animation:t-spin 1s linear infinite}.t-icon.t-size-s,i.t-size-s{font-size:14px}.t-icon.t-size-m,i.t-size-m{font-size:16px}.t-icon.t-size-l,i.t-size-l{font-size:18px}@unocss;.bg-primary-light[data-v-21d20a17]{background-color:color-mix(in srgb,var(--td-brand-color) 10%,transparent)}.grid[data-v-21d20a17]{display:grid}.grid-cols-1[data-v-21d20a17]{grid-template-columns:repeat(1,minmax(0,1fr))}.m-0[data-v-21d20a17]{margin:0}.mb-2[data-v-21d20a17]{margin-bottom:.5rem}.mb-6[data-v-21d20a17]{margin-bottom:1.5rem}.ml-auto[data-v-21d20a17]{margin-left:auto}.mt-1[data-v-21d20a17]{margin-top:.25rem}.mt-2[data-v-21d20a17]{margin-top:.5rem}.mt-3[data-v-21d20a17]{margin-top:.75rem}.mt-auto[data-v-21d20a17]{margin-top:auto}.h-32[data-v-21d20a17]{height:8rem}.h-6[data-v-21d20a17]{height:1.5rem}.w-1\\.5[data-v-21d20a17]{width:.375rem}.w-1\\/3[data-v-21d20a17]{width:33.3333333333%}.w-full[data-v-21d20a17]{width:100%}.flex[data-v-21d20a17]{display:flex}.flex-col[data-v-21d20a17]{flex-direction:column}@keyframes pulse-21d20a17{0%,to{opacity:1}50%{opacity:.5}}.animate-pulse[data-v-21d20a17]{animation:pulse-21d20a17 2s cubic-bezier(.4,0,.6,1) infinite}.cursor-pointer[data-v-21d20a17]{cursor:pointer}.select-text[data-v-21d20a17]{-webkit-user-select:text;user-select:text}.items-center[data-v-21d20a17]{align-items:center}.justify-end[data-v-21d20a17]{justify-content:flex-end}.justify-center[data-v-21d20a17]{justify-content:center}.justify-between[data-v-21d20a17]{justify-content:space-between}.gap-1[data-v-21d20a17]{gap:.25rem}.gap-1\\.5[data-v-21d20a17]{gap:.375rem}.gap-2[data-v-21d20a17]{gap:.5rem}.gap-2\\.5[data-v-21d20a17]{gap:.625rem}.gap-3[data-v-21d20a17]{gap:.75rem}.gap-4[data-v-21d20a17]{gap:1rem}.gap-6[data-v-21d20a17]{gap:1.5rem}.overflow-y-auto[data-v-21d20a17]{overflow-y:auto}.whitespace-pre-wrap[data-v-21d20a17]{white-space:pre-wrap}.break-all[data-v-21d20a17]{word-break:break-all}.border[data-v-21d20a17]{border-width:1px}.border-b[data-v-21d20a17]{border-bottom-width:1px}.border-t[data-v-21d20a17]{border-top-width:1px}.border-\\[var\\(--td-border-level-2-color\\)\\][data-v-21d20a17]{border-color:var(--td-border-level-2-color)}.border-red-200\\/50[data-v-21d20a17]{border-color:#fecaca80}.border-zinc-200\\/60[data-v-21d20a17]{border-color:#e4e4e799}.border-zinc-700\\/40[data-v-21d20a17]{border-color:#3f3f4666}.border-zinc-800\\/50[data-v-21d20a17]{border-color:#27272a80}.dark .dark\\:border-red-900\\/30[data-v-21d20a17]{border-color:#7f1d1d4d}.dark .dark\\:border-zinc-700\\/60[data-v-21d20a17]{border-color:#3f3f4699}.rounded-2xl[data-v-21d20a17]{border-radius:1rem}.rounded-full[data-v-21d20a17]{border-radius:9999px}.rounded-lg[data-v-21d20a17]{border-radius:.5rem}.rounded-xl[data-v-21d20a17]{border-radius:.75rem}.border-dashed[data-v-21d20a17]{border-style:dashed}.last\\:border-none[data-v-21d20a17]:last-child{border-style:none}.bg-\\[var\\(--color-primary\\)\\][data-v-21d20a17]{background-color:var(--color-primary)}.bg-red-50[data-v-21d20a17]{--un-bg-opacity:1;background-color:rgb(254 242 242 / var(--un-bg-opacity))}.bg-zinc-900\\/90[data-v-21d20a17]{background-color:#18181be6}.dark .dark\\:bg-red-950\\/20[data-v-21d20a17]{background-color:#450a0a33}.p-2[data-v-21d20a17]{padding:.5rem}.p-3[data-v-21d20a17]{padding:.75rem}.p-4[data-v-21d20a17]{padding:1rem}.p-6[data-v-21d20a17]{padding:1.5rem}.px-6[data-v-21d20a17]{padding-left:1.5rem;padding-right:1.5rem}.py-0\\.5[data-v-21d20a17]{padding-top:.125rem;padding-bottom:.125rem}.py-2[data-v-21d20a17]{padding-top:.5rem;padding-bottom:.5rem}.py-4[data-v-21d20a17]{padding-top:1rem;padding-bottom:1rem}.pb-4[data-v-21d20a17]{padding-bottom:1rem}.pt-3[data-v-21d20a17]{padding-top:.75rem}.pt-4[data-v-21d20a17]{padding-top:1rem}.text-center[data-v-21d20a17]{text-align:center}.text-\\[10px\\][data-v-21d20a17]{font-size:10px}.text-\\[11px\\][data-v-21d20a17]{font-size:11px}.text-lg[data-v-21d20a17]{font-size:1.125rem;line-height:1.75rem}.text-sm[data-v-21d20a17]{font-size:.875rem;line-height:1.25rem}.text-xs[data-v-21d20a17]{font-size:.75rem;line-height:1rem}.dark .dark\\:text-red-400[data-v-21d20a17],.text-red-400[data-v-21d20a17]{--un-text-opacity:1;color:rgb(248 113 113 / var(--un-text-opacity))}.text-\\[var\\(--color-primary\\)\\][data-v-21d20a17]{color:var(--color-primary)}.text-\\[var\\(--color-success\\)\\][data-v-21d20a17]{color:var(--color-success)}.text-\\[var\\(--td-text-color-placeholder\\)\\][data-v-21d20a17]{color:var(--td-text-color-placeholder)}.text-\\[var\\(--td-text-color-primary\\)\\][data-v-21d20a17]{color:var(--td-text-color-primary)}.text-\\[var\\(--td-text-color-secondary\\)\\][data-v-21d20a17]{color:var(--td-text-color-secondary)}.text-emerald-400[data-v-21d20a17]{--un-text-opacity:1;color:rgb(52 211 153 / var(--un-text-opacity))}.text-red-500[data-v-21d20a17]{--un-text-opacity:1;color:rgb(239 68 68 / var(--un-text-opacity))}.text-red-600[data-v-21d20a17]{--un-text-opacity:1;color:rgb(220 38 38 / var(--un-text-opacity))}.text-zinc-300[data-v-21d20a17]{--un-text-opacity:1;color:rgb(212 212 216 / var(--un-text-opacity))}.text-zinc-500[data-v-21d20a17]{--un-text-opacity:1;color:rgb(113 113 122 / var(--un-text-opacity))}.hover\\:text-\\[var\\(--color-primary\\)\\][data-v-21d20a17]:hover{color:var(--color-primary)}.font-bold[data-v-21d20a17]{font-weight:700}.font-medium[data-v-21d20a17]{font-weight:500}.font-semibold[data-v-21d20a17]{font-weight:600}.leading-normal[data-v-21d20a17]{line-height:1.5}.leading-relaxed[data-v-21d20a17]{line-height:1.625}.tracking-tight[data-v-21d20a17]{letter-spacing:-.025em}.font-mono[data-v-21d20a17]{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}.opacity-90[data-v-21d20a17]{opacity:.9}.shadow-\\[0_0_8px_var\\(--color-primary-light\\)\\][data-v-21d20a17]{--un-shadow:0 0 8px var(--un-shadow-color, var(--color-primary-light));box-shadow:var(--un-ring-offset-shadow),var(--un-ring-shadow),var(--un-shadow)}.shadow-sm[data-v-21d20a17]{--un-shadow:var(--un-shadow-inset) 0 1px 2px 0 var(--un-shadow-color, rgb(0 0 0 / .05));box-shadow:var(--un-ring-offset-shadow),var(--un-ring-shadow),var(--un-shadow)}.light .light-outline[data-v-21d20a17],.outline[data-v-21d20a17]{outline-style:solid}.transition-colors[data-v-21d20a17]{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}@media(min-width:768px){.md\\:grid-cols-2[data-v-21d20a17]{grid-template-columns:repeat(2,minmax(0,1fr))}.md\\:grid-cols-3[data-v-21d20a17]{grid-template-columns:repeat(3,minmax(0,1fr))}.md\\:w-auto[data-v-21d20a17]{width:auto}}@media(min-width:1024px){.lg\\:col-span-2[data-v-21d20a17]{grid-column:span 2/span 2}.lg\\:col-span-3[data-v-21d20a17]{grid-column:span 3/span 3}.lg\\:grid-cols-5[data-v-21d20a17]{grid-template-columns:repeat(5,minmax(0,1fr))}.lg\\:border-l[data-v-21d20a17]{border-left-width:1px}.lg\\:border-t-0[data-v-21d20a17]{border-top-width:0px}.lg\\:pl-6[data-v-21d20a17]{padding-left:1.5rem}.lg\\:pt-0[data-v-21d20a17]{padding-top:0}}")),document.head.appendChild(a)}}catch(t){console.error("vite-plugin-css-injected-by-js",t)}})();
+function ee(t) {
   return t && t.__esModule && Object.prototype.hasOwnProperty.call(t, "default") ? t.default : t;
 }
-var j, $;
-function Y() {
-  return $ || ($ = 1, j = Vue), j;
+var D, L;
+function te() {
+  return L || (L = 1, D = Vue), D;
 }
-var e = Y(), D, M;
-function ee() {
-  return M || (M = 1, D = TDesign), D;
+var e = te(), I, W;
+function le() {
+  return W || (W = 1, I = TDesign), I;
 }
-var P = ee();
+var S = le();
 function E(t) {
   "@babel/helpers - typeof";
-  return E = typeof Symbol == "function" && typeof Symbol.iterator == "symbol" ? function(l) {
-    return typeof l;
-  } : function(l) {
-    return l && typeof Symbol == "function" && l.constructor === Symbol && l !== Symbol.prototype ? "symbol" : typeof l;
+  return E = typeof Symbol == "function" && typeof Symbol.iterator == "symbol" ? function(r) {
+    return typeof r;
+  } : function(r) {
+    return r && typeof Symbol == "function" && r.constructor === Symbol && r !== Symbol.prototype ? "symbol" : typeof r;
   }, E(t);
 }
-function te(t, l) {
+function re(t, r) {
   if (E(t) != "object" || !t) return t;
-  var r = t[Symbol.toPrimitive];
-  if (r !== void 0) {
-    var o = r.call(t, l);
-    if (E(o) != "object") return o;
+  var o = t[Symbol.toPrimitive];
+  if (o !== void 0) {
+    var l = o.call(t, r);
+    if (E(l) != "object") return l;
     throw new TypeError("@@toPrimitive must return a primitive value.");
   }
-  return (l === "string" ? String : Number)(t);
+  return (r === "string" ? String : Number)(t);
 }
-function le(t) {
-  var l = te(t, "string");
-  return E(l) == "symbol" ? l : l + "";
+function oe(t) {
+  var r = re(t, "string");
+  return E(r) == "symbol" ? r : r + "";
 }
-function S(t, l, r) {
-  return (l = le(l)) in t ? Object.defineProperty(t, l, {
-    value: r,
+function O(t, r, o) {
+  return (r = oe(r)) in t ? Object.defineProperty(t, r, {
+    value: o,
     enumerable: !0,
     configurable: !0,
     writable: !0
-  }) : t[l] = r, t;
+  }) : t[r] = o, t;
 }
-var W = (t) => {
-  var l = ["strokeLinecap", "fillRule", "clipRule", "strokeWidth"];
-  return l.includes(t) ? t.replace(/([a-z0-9]|(?=[A-Z]))([A-Z])/g, "$1-$2").toLowerCase() : t;
-}, w = (t, l) => {
-  var r = {};
+var z = (t) => {
+  var r = ["strokeLinecap", "fillRule", "clipRule", "strokeWidth"];
+  return r.includes(t) ? t.replace(/([a-z0-9]|(?=[A-Z]))([A-Z])/g, "$1-$2").toLowerCase() : t;
+}, w = (t, r) => {
+  var o = {};
   if (t.attrs)
-    for (var [o, c] of Object.entries(t.attrs))
-      if (typeof c == "string" && c.startsWith("props.")) {
-        var m = c.split(".")[1];
-        r[W(o)] = l[m];
+    for (var [l, i] of Object.entries(t.attrs))
+      if (typeof i == "string" && i.startsWith("props.")) {
+        var v = i.split(".")[1];
+        o[z(l)] = r[v];
       } else
-        r[W(o)] = c;
-  t.tag === "svg" && (r.class = l.class, r.style = l.style, r.onClick = l.onClick);
-  var v = t.children ? t.children.map((f) => w(f, l)) : [];
-  return e.h(t.tag, r, v);
-}, re = "t", oe = {
-  classPrefix: re
+        o[z(l)] = i;
+  t.tag === "svg" && (o.class = r.class, o.style = r.style, o.onClick = r.onClick);
+  var m = t.children ? t.children.map((f) => w(f, r)) : [];
+  return e.h(t.tag, o, m);
+}, ae = "t", ne = {
+  classPrefix: ae
 };
-function ae() {
+function se() {
   var {
     classPrefix: t
-  } = oe;
+  } = ne;
   return {
     SIZE: {
       default: "",
@@ -91,37 +91,37 @@ function ae() {
     }
   };
 }
-function O(t) {
-  var l = ae().SIZE, r = e.computed(() => t.value in l ? l[t.value] : ""), o = e.computed(() => t.value === void 0 || t.value in l ? {} : {
+function A(t) {
+  var r = se().SIZE, o = e.computed(() => t.value in r ? r[t.value] : ""), l = e.computed(() => t.value === void 0 || t.value in r ? {} : {
     fontSize: t.value
   });
   return {
-    style: o,
-    className: r
+    style: l,
+    className: o
   };
 }
-function L(t, l) {
-  var r = Object.keys(t);
+function R(t, r) {
+  var o = Object.keys(t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(t);
-    l && (o = o.filter(function(c) {
-      return Object.getOwnPropertyDescriptor(t, c).enumerable;
-    })), r.push.apply(r, o);
+    var l = Object.getOwnPropertySymbols(t);
+    r && (l = l.filter(function(i) {
+      return Object.getOwnPropertyDescriptor(t, i).enumerable;
+    })), o.push.apply(o, l);
   }
-  return r;
+  return o;
 }
-function z(t) {
-  for (var l = 1; l < arguments.length; l++) {
-    var r = arguments[l] != null ? arguments[l] : {};
-    l % 2 ? L(Object(r), !0).forEach(function(o) {
-      S(t, o, r[o]);
-    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : L(Object(r)).forEach(function(o) {
-      Object.defineProperty(t, o, Object.getOwnPropertyDescriptor(r, o));
+function U(t) {
+  for (var r = 1; r < arguments.length; r++) {
+    var o = arguments[r] != null ? arguments[r] : {};
+    r % 2 ? R(Object(o), !0).forEach(function(l) {
+      O(t, l, o[l]);
+    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(o)) : R(Object(o)).forEach(function(l) {
+      Object.defineProperty(t, l, Object.getOwnPropertyDescriptor(o, l));
     });
   }
   return t;
 }
-var ne = {
+var ie = {
   tag: "svg",
   attrs: {
     fill: "none",
@@ -161,7 +161,7 @@ var ne = {
       }
     }]
   }]
-}, se = e.defineComponent({
+}, ce = e.defineComponent({
   name: "DashboardIcon",
   props: {
     size: {
@@ -180,61 +180,61 @@ var ne = {
       type: Number
     }
   },
-  setup(t, l) {
+  setup(t, r) {
     var {
-      attrs: r
-    } = l, o = e.computed(() => t.size), c = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), m = e.computed(() => {
+      attrs: o
+    } = r, l = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), v = e.computed(() => {
       var n;
       return t.strokeColor ? Array.isArray(t.strokeColor) ? (n = t.strokeColor[1]) !== null && n !== void 0 ? n : t.strokeColor[0] : t.strokeColor : "currentColor";
-    }), v = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), f = e.computed(() => {
+    }), m = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), f = e.computed(() => {
       var n;
       return t.fillColor ? Array.isArray(t.fillColor) ? (n = t.fillColor[1]) !== null && n !== void 0 ? n : t.fillColor[0] : t.fillColor : "transparent";
-    }), y = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
-      className: g,
-      style: C
-    } = O(o), p = e.computed(() => ["t-icon", "t-icon-dashboard", g.value]), x = e.computed(() => z(z({
+    }), C = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
+      className: y,
+      style: x
+    } = A(l), k = e.computed(() => ["t-icon", "t-icon-dashboard", y.value]), g = e.computed(() => U(U({
       fill: "none"
-    }, C.value), r.style)), b = e.computed(() => ({
-      class: p.value,
-      style: x.value,
+    }, x.value), o.style)), p = e.computed(() => ({
+      class: k.value,
+      style: g.value,
       onClick: (n) => {
-        var d;
-        return (d = t.onClick) === null || d === void 0 ? void 0 : d.call(t, {
+        var u;
+        return (u = t.onClick) === null || u === void 0 ? void 0 : u.call(t, {
           e: n
         });
       },
-      strokeColor1: c.value,
-      strokeColor2: m.value,
-      fillColor1: v.value,
+      strokeColor1: i.value,
+      strokeColor2: v.value,
+      fillColor1: m.value,
       fillColor2: f.value,
       strokeWidth: t.strokeWidth || 2,
-      filledColor: y.value
+      filledColor: C.value
     }));
-    return () => w(ne, b.value);
+    return () => w(ie, p.value);
   }
 });
-function R(t, l) {
-  var r = Object.keys(t);
+function q(t, r) {
+  var o = Object.keys(t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(t);
-    l && (o = o.filter(function(c) {
-      return Object.getOwnPropertyDescriptor(t, c).enumerable;
-    })), r.push.apply(r, o);
+    var l = Object.getOwnPropertySymbols(t);
+    r && (l = l.filter(function(i) {
+      return Object.getOwnPropertyDescriptor(t, i).enumerable;
+    })), o.push.apply(o, l);
   }
-  return r;
+  return o;
 }
-function U(t) {
-  for (var l = 1; l < arguments.length; l++) {
-    var r = arguments[l] != null ? arguments[l] : {};
-    l % 2 ? R(Object(r), !0).forEach(function(o) {
-      S(t, o, r[o]);
-    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : R(Object(r)).forEach(function(o) {
-      Object.defineProperty(t, o, Object.getOwnPropertyDescriptor(r, o));
+function K(t) {
+  for (var r = 1; r < arguments.length; r++) {
+    var o = arguments[r] != null ? arguments[r] : {};
+    r % 2 ? q(Object(o), !0).forEach(function(l) {
+      O(t, l, o[l]);
+    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(o)) : q(Object(o)).forEach(function(l) {
+      Object.defineProperty(t, l, Object.getOwnPropertyDescriptor(o, l));
     });
   }
   return t;
 }
-var ie = {
+var de = {
   tag: "svg",
   attrs: {
     fill: "none",
@@ -274,7 +274,7 @@ var ie = {
       }
     }]
   }]
-}, ce = e.defineComponent({
+}, ue = e.defineComponent({
   name: "ErrorCircleIcon",
   props: {
     size: {
@@ -293,61 +293,61 @@ var ie = {
       type: Number
     }
   },
-  setup(t, l) {
+  setup(t, r) {
     var {
-      attrs: r
-    } = l, o = e.computed(() => t.size), c = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), m = e.computed(() => {
+      attrs: o
+    } = r, l = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), v = e.computed(() => {
       var n;
       return t.strokeColor ? Array.isArray(t.strokeColor) ? (n = t.strokeColor[1]) !== null && n !== void 0 ? n : t.strokeColor[0] : t.strokeColor : "currentColor";
-    }), v = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), f = e.computed(() => {
+    }), m = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), f = e.computed(() => {
       var n;
       return t.fillColor ? Array.isArray(t.fillColor) ? (n = t.fillColor[1]) !== null && n !== void 0 ? n : t.fillColor[0] : t.fillColor : "transparent";
-    }), y = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
-      className: g,
-      style: C
-    } = O(o), p = e.computed(() => ["t-icon", "t-icon-error-circle", g.value]), x = e.computed(() => U(U({
+    }), C = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
+      className: y,
+      style: x
+    } = A(l), k = e.computed(() => ["t-icon", "t-icon-error-circle", y.value]), g = e.computed(() => K(K({
       fill: "none"
-    }, C.value), r.style)), b = e.computed(() => ({
-      class: p.value,
-      style: x.value,
+    }, x.value), o.style)), p = e.computed(() => ({
+      class: k.value,
+      style: g.value,
       onClick: (n) => {
-        var d;
-        return (d = t.onClick) === null || d === void 0 ? void 0 : d.call(t, {
+        var u;
+        return (u = t.onClick) === null || u === void 0 ? void 0 : u.call(t, {
           e: n
         });
       },
-      strokeColor1: c.value,
-      strokeColor2: m.value,
-      fillColor1: v.value,
+      strokeColor1: i.value,
+      strokeColor2: v.value,
+      fillColor1: m.value,
       fillColor2: f.value,
       strokeWidth: t.strokeWidth || 2,
-      filledColor: y.value
+      filledColor: C.value
     }));
-    return () => w(ie, b.value);
+    return () => w(de, p.value);
   }
 });
-function q(t, l) {
-  var r = Object.keys(t);
+function Z(t, r) {
+  var o = Object.keys(t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(t);
-    l && (o = o.filter(function(c) {
-      return Object.getOwnPropertyDescriptor(t, c).enumerable;
-    })), r.push.apply(r, o);
+    var l = Object.getOwnPropertySymbols(t);
+    r && (l = l.filter(function(i) {
+      return Object.getOwnPropertyDescriptor(t, i).enumerable;
+    })), o.push.apply(o, l);
   }
-  return r;
+  return o;
 }
-function Z(t) {
-  for (var l = 1; l < arguments.length; l++) {
-    var r = arguments[l] != null ? arguments[l] : {};
-    l % 2 ? q(Object(r), !0).forEach(function(o) {
-      S(t, o, r[o]);
-    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : q(Object(r)).forEach(function(o) {
-      Object.defineProperty(t, o, Object.getOwnPropertyDescriptor(r, o));
+function F(t) {
+  for (var r = 1; r < arguments.length; r++) {
+    var o = arguments[r] != null ? arguments[r] : {};
+    r % 2 ? Z(Object(o), !0).forEach(function(l) {
+      O(t, l, o[l]);
+    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(o)) : Z(Object(o)).forEach(function(l) {
+      Object.defineProperty(t, l, Object.getOwnPropertyDescriptor(o, l));
     });
   }
   return t;
 }
-var de = {
+var ve = {
   tag: "svg",
   attrs: {
     fill: "none",
@@ -394,7 +394,7 @@ var de = {
       }
     }]
   }]
-}, K = e.defineComponent({
+}, H = e.defineComponent({
   name: "InternetIcon",
   props: {
     size: {
@@ -413,61 +413,61 @@ var de = {
       type: Number
     }
   },
-  setup(t, l) {
+  setup(t, r) {
     var {
-      attrs: r
-    } = l, o = e.computed(() => t.size), c = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), m = e.computed(() => {
+      attrs: o
+    } = r, l = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), v = e.computed(() => {
       var n;
       return t.strokeColor ? Array.isArray(t.strokeColor) ? (n = t.strokeColor[1]) !== null && n !== void 0 ? n : t.strokeColor[0] : t.strokeColor : "currentColor";
-    }), v = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), f = e.computed(() => {
+    }), m = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), f = e.computed(() => {
       var n;
       return t.fillColor ? Array.isArray(t.fillColor) ? (n = t.fillColor[1]) !== null && n !== void 0 ? n : t.fillColor[0] : t.fillColor : "transparent";
-    }), y = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
-      className: g,
-      style: C
-    } = O(o), p = e.computed(() => ["t-icon", "t-icon-internet", g.value]), x = e.computed(() => Z(Z({
+    }), C = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
+      className: y,
+      style: x
+    } = A(l), k = e.computed(() => ["t-icon", "t-icon-internet", y.value]), g = e.computed(() => F(F({
       fill: "none"
-    }, C.value), r.style)), b = e.computed(() => ({
-      class: p.value,
-      style: x.value,
+    }, x.value), o.style)), p = e.computed(() => ({
+      class: k.value,
+      style: g.value,
       onClick: (n) => {
-        var d;
-        return (d = t.onClick) === null || d === void 0 ? void 0 : d.call(t, {
+        var u;
+        return (u = t.onClick) === null || u === void 0 ? void 0 : u.call(t, {
           e: n
         });
       },
-      strokeColor1: c.value,
-      strokeColor2: m.value,
-      fillColor1: v.value,
+      strokeColor1: i.value,
+      strokeColor2: v.value,
+      fillColor1: m.value,
       fillColor2: f.value,
       strokeWidth: t.strokeWidth || 2,
-      filledColor: y.value
+      filledColor: C.value
     }));
-    return () => w(de, b.value);
+    return () => w(ve, p.value);
   }
 });
-function F(t, l) {
-  var r = Object.keys(t);
+function G(t, r) {
+  var o = Object.keys(t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(t);
-    l && (o = o.filter(function(c) {
-      return Object.getOwnPropertyDescriptor(t, c).enumerable;
-    })), r.push.apply(r, o);
+    var l = Object.getOwnPropertySymbols(t);
+    r && (l = l.filter(function(i) {
+      return Object.getOwnPropertyDescriptor(t, i).enumerable;
+    })), o.push.apply(o, l);
   }
-  return r;
+  return o;
 }
-function H(t) {
-  for (var l = 1; l < arguments.length; l++) {
-    var r = arguments[l] != null ? arguments[l] : {};
-    l % 2 ? F(Object(r), !0).forEach(function(o) {
-      S(t, o, r[o]);
-    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : F(Object(r)).forEach(function(o) {
-      Object.defineProperty(t, o, Object.getOwnPropertyDescriptor(r, o));
+function X(t) {
+  for (var r = 1; r < arguments.length; r++) {
+    var o = arguments[r] != null ? arguments[r] : {};
+    r % 2 ? G(Object(o), !0).forEach(function(l) {
+      O(t, l, o[l]);
+    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(o)) : G(Object(o)).forEach(function(l) {
+      Object.defineProperty(t, l, Object.getOwnPropertyDescriptor(o, l));
     });
   }
   return t;
 }
-var ue = {
+var me = {
   tag: "svg",
   attrs: {
     fill: "none",
@@ -516,7 +516,7 @@ var ue = {
       }
     }]
   }]
-}, ve = e.defineComponent({
+}, fe = e.defineComponent({
   name: "SettingIcon",
   props: {
     size: {
@@ -535,63 +535,85 @@ var ue = {
       type: Number
     }
   },
-  setup(t, l) {
+  setup(t, r) {
     var {
-      attrs: r
-    } = l, o = e.computed(() => t.size), c = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), m = e.computed(() => {
+      attrs: o
+    } = r, l = e.computed(() => t.size), i = e.computed(() => t.strokeColor ? Array.isArray(t.strokeColor) ? t.strokeColor[0] : t.strokeColor : "currentColor"), v = e.computed(() => {
       var n;
       return t.strokeColor ? Array.isArray(t.strokeColor) ? (n = t.strokeColor[1]) !== null && n !== void 0 ? n : t.strokeColor[0] : t.strokeColor : "currentColor";
-    }), v = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), f = e.computed(() => {
+    }), m = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "transparent"), f = e.computed(() => {
       var n;
       return t.fillColor ? Array.isArray(t.fillColor) ? (n = t.fillColor[1]) !== null && n !== void 0 ? n : t.fillColor[0] : t.fillColor : "transparent";
-    }), y = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
-      className: g,
-      style: C
-    } = O(o), p = e.computed(() => ["t-icon", "t-icon-setting", g.value]), x = e.computed(() => H(H({
+    }), C = e.computed(() => t.fillColor ? Array.isArray(t.fillColor) ? t.fillColor[0] : t.fillColor : "currentColor"), {
+      className: y,
+      style: x
+    } = A(l), k = e.computed(() => ["t-icon", "t-icon-setting", y.value]), g = e.computed(() => X(X({
       fill: "none"
-    }, C.value), r.style)), b = e.computed(() => ({
-      class: p.value,
-      style: x.value,
+    }, x.value), o.style)), p = e.computed(() => ({
+      class: k.value,
+      style: g.value,
       onClick: (n) => {
-        var d;
-        return (d = t.onClick) === null || d === void 0 ? void 0 : d.call(t, {
+        var u;
+        return (u = t.onClick) === null || u === void 0 ? void 0 : u.call(t, {
           e: n
         });
       },
-      strokeColor1: c.value,
-      strokeColor2: m.value,
-      fillColor1: v.value,
+      strokeColor1: i.value,
+      strokeColor2: v.value,
+      fillColor1: m.value,
       fillColor2: f.value,
       strokeWidth: t.strokeWidth || 2,
-      filledColor: y.value
+      filledColor: C.value
     }));
-    return () => w(ue, b.value);
+    return () => w(me, p.value);
   }
-}), B, X;
-function me() {
-  return X || (X = 1, B = mslxRequest), B;
+}), B, J;
+function pe() {
+  return J || (J = 1, B = mslxRequest), B;
 }
-var fe = me();
-const N = /* @__PURE__ */ Q(fe), h = "/api/plugins/mslx-plugin-ddns/ddns", pe = /* @__PURE__ */ e.defineComponent({
+var Ce = pe();
+const N = /* @__PURE__ */ ee(Ce), h = "/api/plugins/mslx-plugin-ddns/ddns", ye = /* @__PURE__ */ e.defineComponent({
   __name: "DDNSSettingsCard",
   setup(t) {
-    const l = e.ref({
+    const r = e.computed(() => {
+      switch (l.value.provider) {
+        case "dnspod":
+          return "Token ID";
+        case "cloudflare":
+          return "账号邮箱 (仅用Token则留空)";
+        case "huaweicloud":
+          return "Access Key Id";
+        default:
+          return "SecretId / AccessKeyId";
+      }
+    }), o = e.computed(() => {
+      switch (l.value.provider) {
+        case "dnspod":
+          return "Token";
+        case "cloudflare":
+          return "Global API Key / API Token";
+        case "huaweicloud":
+          return "Secret Access Key";
+        default:
+          return "SecretKey / AccessKeySecret";
+      }
+    }), l = e.ref({
       provider: "dnspod",
       secretId: "",
       secretKey: "",
       syncInterval: 5,
       ipv4: { enable: !1, sourceType: "api", customIP: "", apiUrl: "https://api.ipify.org", nicName: "", domains: "" },
       ipv6: { enable: !1, sourceType: "api", customIP: "", apiUrl: "https://api6.ipify.org", nicName: "", domains: "" }
-    }), r = e.ref({
+    }), i = e.ref({
       lastRunTime: null,
       lastSuccessTime: null,
       lastErrorMessage: "",
       isRunning: !1,
       currentIP4: "",
       currentIP6: ""
-    }), o = e.ref([]), c = e.ref([]), m = e.ref(!1);
-    let v = null;
-    const f = e.ref(!1), y = async () => {
+    }), v = e.ref([]), m = e.ref([]), f = e.ref(!1);
+    let C = null;
+    const y = e.ref(!1), x = async () => {
       try {
         const s = await N.get({ url: `${h}/config` });
         s && (l.value = {
@@ -599,52 +621,52 @@ const N = /* @__PURE__ */ Q(fe), h = "/api/plugins/mslx-plugin-ddns/ddns", pe = 
           ...s,
           ipv4: s.ipv4 || s.iPv4 || s.IPv4 || l.value.ipv4,
           ipv6: s.ipv6 || s.iPv6 || s.IPv6 || l.value.ipv6
-        }, s.secretKey === "******" ? (f.value = !0, l.value.secretKey = "") : f.value = !1);
+        }, s.secretKey === "******" ? (y.value = !0, l.value.secretKey = "") : y.value = !1);
       } catch (s) {
         console.error("[DDNS] 获取配置失败", s);
       }
-    }, g = async () => {
+    }, k = async () => {
       try {
         const s = await N.get({ url: `${h}/nics` });
-        s && (c.value = s);
+        s && (m.value = s);
       } catch (s) {
         console.error("[DDNS] 获取网卡失败", s);
       }
-    }, C = async () => {
+    }, g = async () => {
       try {
         const s = await N.get({ url: `${h}/status` });
-        s && (r.value = s);
+        s && (i.value = s);
       } catch (s) {
         console.error("[DDNS] 获取状态失败", s);
       }
     }, p = async () => {
       try {
         const s = await N.get({ url: `${h}/logs` });
-        s && Array.isArray(s) && (o.value = s);
+        s && Array.isArray(s) && (v.value = s);
       } catch (s) {
         console.error("[DDNS] 获取日志失败", s);
       }
-    }, x = async () => {
+    }, n = async () => {
       try {
-        m.value = !0, await N.post({
+        f.value = !0, await N.post({
           url: `${h}/save-config`,
           data: l.value
-        }), P.MessagePlugin.success("保存成功"), y(), p();
+        }), S.MessagePlugin.success("保存成功"), x(), p();
       } catch (s) {
-        P.MessagePlugin.error(s.message || "保存配置失败");
+        S.MessagePlugin.error(s.message || "保存配置失败");
       } finally {
-        m.value = !1;
+        f.value = !1;
       }
-    }, b = async () => {
+    }, u = async () => {
       try {
-        await N.post({ url: `${h}/request-now` }), P.MessagePlugin.success("同步任务已启动！"), C(), p(), d(3e3);
+        await N.post({ url: `${h}/request-now` }), S.MessagePlugin.success("同步任务已启动！"), g(), p(), P(3e3);
       } catch (s) {
-        P.MessagePlugin.error(s.message || "触发任务异常");
+        S.MessagePlugin.error(s.message || "触发任务异常");
       }
-    }, n = (s) => {
+    }, _ = (s) => {
       if (!s) return "暂无数据";
-      const i = new Date(s);
-      return isNaN(i.getTime()) ? s : i.toLocaleString("zh-CN", {
+      const c = new Date(s);
+      return isNaN(c.getTime()) ? s : c.toLocaleString("zh-CN", {
         year: "numeric",
         month: "2-digit",
         day: "2-digit",
@@ -653,40 +675,40 @@ const N = /* @__PURE__ */ Q(fe), h = "/api/plugins/mslx-plugin-ddns/ddns", pe = 
         second: "2-digit",
         hour12: !1
       });
-    }, d = (s) => {
-      I(), v = window.setInterval(async () => {
-        await C(), await p(), !r.value.isRunning && s === 3e3 ? d(1e4) : r.value.isRunning && s === 1e4 && d(3e3);
+    }, P = (s) => {
+      T(), C = window.setInterval(async () => {
+        await g(), await p(), !i.value.isRunning && s === 3e3 ? P(1e4) : i.value.isRunning && s === 1e4 && P(3e3);
       }, s);
-    }, I = () => {
-      v !== null && (window.clearInterval(v), v = null);
+    }, T = () => {
+      C !== null && (window.clearInterval(C), C = null);
     };
     return e.onMounted(async () => {
-      await y(), await g(), await C(), await p(), d(1e4);
+      await x(), await k(), await g(), await p(), P(1e4);
     }), e.onUnmounted(() => {
-      I();
-    }), (s, i) => {
-      const G = e.resolveComponent("t-loading"), A = e.resolveComponent("t-tag"), u = e.resolveComponent("t-option"), V = e.resolveComponent("t-select"), k = e.resolveComponent("t-input"), _ = e.resolveComponent("t-switch"), T = e.resolveComponent("t-button");
-      return e.openBlock(), e.createElementBlock("div", { class: "design-card rounded-2xl glass-card border border-[var(--td-component-border)] shadow-md p-6 text-[var(--td-text-color-primary)]" }, [
+      T();
+    }), (s, c) => {
+      const Q = e.resolveComponent("t-loading"), j = e.resolveComponent("t-tag"), d = e.resolveComponent("t-option"), V = e.resolveComponent("t-select"), b = e.resolveComponent("t-input"), $ = e.resolveComponent("t-switch"), M = e.resolveComponent("t-button");
+      return e.openBlock(), e.createElementBlock("div", { class: "design-card rounded-2xl p-6 text-[var(--td-text-color-primary)]" }, [
         e.createElementVNode("div", { class: "flex items-center gap-3 mb-6 pb-4 border-b border-dashed border-[var(--td-border-level-2-color)]" }, [
           e.createElementVNode("div", { class: "w-1.5 h-6 bg-[var(--color-primary)] rounded-full shadow-[0_0_8px_var(--color-primary-light)] opacity-90" }),
           e.createElementVNode("div", { class: "flex flex-col" }, [
             e.createElementVNode("h2", { class: "text-lg font-bold text-[var(--td-text-color-primary)] m-0" }, "动态域名解析 (DDNS)"),
             e.createElementVNode("span", { class: "text-xs text-[var(--td-text-color-secondary)] mt-1 font-medium" }, "将本机 IPv4 / IPv6 地址自动更新到云服务商解析记录")
           ]),
-          r.value.isRunning ? (e.openBlock(), e.createBlock(A, {
+          i.value.isRunning ? (e.openBlock(), e.createBlock(j, {
             key: 0,
             theme: "primary",
             variant: "light",
             class: "ml-auto animate-pulse flex items-center gap-1"
           }, {
             icon: e.withCtx(() => [
-              e.createVNode(G, { size: "12px" })
+              e.createVNode(Q, { size: "12px" })
             ]),
             default: e.withCtx(() => [
               e.createTextVNode(" 同步中 ")
             ]),
             _: 1
-          })) : r.value.lastSuccessTime ? (e.openBlock(), e.createBlock(A, {
+          })) : i.value.lastSuccessTime ? (e.openBlock(), e.createBlock(j, {
             key: 1,
             theme: "success",
             variant: "light-outline",
@@ -696,7 +718,7 @@ const N = /* @__PURE__ */ Q(fe), h = "/api/plugins/mslx-plugin-ddns/ddns", pe = 
               e.createTextVNode(" 就绪 ")
             ]),
             _: 1
-          })) : (e.openBlock(), e.createBlock(A, {
+          })) : (e.openBlock(), e.createBlock(j, {
             key: 2,
             theme: "warning",
             variant: "light",
@@ -711,7 +733,7 @@ const N = /* @__PURE__ */ Q(fe), h = "/api/plugins/mslx-plugin-ddns/ddns", pe = 
         e.createElementVNode("div", { class: "grid grid-cols-1 lg:grid-cols-5 gap-6" }, [
           e.createElementVNode("div", { class: "lg:col-span-3 flex flex-col gap-4" }, [
             e.createElementVNode("h3", { class: "font-bold text-sm m-0 flex items-center gap-1.5 text-[var(--td-text-color-primary)]" }, [
-              e.createVNode(e.unref(ve)),
+              e.createVNode(e.unref(fe)),
               e.createTextVNode(" 服务商配置 ")
             ]),
             e.createElementVNode("div", { class: "flex flex-col gap-3 mt-1" }, [
@@ -720,42 +742,50 @@ const N = /* @__PURE__ */ Q(fe), h = "/api/plugins/mslx-plugin-ddns/ddns", pe = 
                   e.createElementVNode("label", { class: "text-xs font-semibold text-[var(--td-text-color-secondary)]" }, "DNS 服务商"),
                   e.createVNode(V, {
                     modelValue: l.value.provider,
-                    "onUpdate:modelValue": i[0] || (i[0] = (a) => l.value.provider = a),
+                    "onUpdate:modelValue": c[0] || (c[0] = (a) => l.value.provider = a),
                     placeholder: "选择服务商"
                   }, {
                     default: e.withCtx(() => [
-                      e.createVNode(u, {
+                      e.createVNode(d, {
                         label: "DNSPod (Token)",
                         value: "dnspod"
                       }),
-                      e.createVNode(u, {
+                      e.createVNode(d, {
                         label: "腾讯云",
                         value: "tencentcloud"
                       }),
-                      e.createVNode(u, {
+                      e.createVNode(d, {
                         label: "阿里云",
                         value: "aliyun"
+                      }),
+                      e.createVNode(d, {
+                        label: "Cloudflare",
+                        value: "cloudflare"
+                      }),
+                      e.createVNode(d, {
+                        label: "华为云",
+                        value: "huaweicloud"
                       })
                     ]),
                     _: 1
                   }, 8, ["modelValue"])
                 ]),
                 e.createElementVNode("div", { class: "flex flex-col gap-1.5" }, [
-                  e.createElementVNode("label", { class: "text-xs font-semibold text-[var(--td-text-color-secondary)]" }, "Secret ID / Token ID"),
-                  e.createVNode(k, {
+                  e.createElementVNode("label", { class: "text-xs font-semibold text-[var(--td-text-color-secondary)]" }, e.toDisplayString(r.value), 1),
+                  e.createVNode(b, {
                     modelValue: l.value.secretId,
-                    "onUpdate:modelValue": i[1] || (i[1] = (a) => l.value.secretId = a),
+                    "onUpdate:modelValue": c[1] || (c[1] = (a) => l.value.secretId = a),
                     placeholder: "输入 ID",
                     clearable: ""
                   }, null, 8, ["modelValue"])
                 ]),
                 e.createElementVNode("div", { class: "flex flex-col gap-1.5" }, [
-                  e.createElementVNode("label", { class: "text-xs font-semibold text-[var(--td-text-color-secondary)]" }, "Secret Key / Token Value"),
-                  e.createVNode(k, {
+                  e.createElementVNode("label", { class: "text-xs font-semibold text-[var(--td-text-color-secondary)]" }, e.toDisplayString(o.value), 1),
+                  e.createVNode(b, {
                     modelValue: l.value.secretKey,
-                    "onUpdate:modelValue": i[2] || (i[2] = (a) => l.value.secretKey = a),
+                    "onUpdate:modelValue": c[2] || (c[2] = (a) => l.value.secretKey = a),
                     type: "password",
-                    placeholder: f.value ? "已配置 (留空不修改)" : "输入 Key",
+                    placeholder: y.value ? "已配置 (留空不修改)" : "输入 Key",
                     clearable: ""
                   }, null, 8, ["modelValue", "placeholder"])
                 ])
@@ -764,27 +794,27 @@ const N = /* @__PURE__ */ Q(fe), h = "/api/plugins/mslx-plugin-ddns/ddns", pe = 
                 e.createElementVNode("label", { class: "text-xs font-semibold text-[var(--td-text-color-secondary)]" }, "同步间隔 (分钟)"),
                 e.createVNode(V, {
                   modelValue: l.value.syncInterval,
-                  "onUpdate:modelValue": i[3] || (i[3] = (a) => l.value.syncInterval = a),
+                  "onUpdate:modelValue": c[3] || (c[3] = (a) => l.value.syncInterval = a),
                   placeholder: "选择频率"
                 }, {
                   default: e.withCtx(() => [
-                    e.createVNode(u, {
+                    e.createVNode(d, {
                       label: "1 分钟",
                       value: 1
                     }),
-                    e.createVNode(u, {
+                    e.createVNode(d, {
                       label: "5 分钟",
                       value: 5
                     }),
-                    e.createVNode(u, {
+                    e.createVNode(d, {
                       label: "10 分钟",
                       value: 10
                     }),
-                    e.createVNode(u, {
+                    e.createVNode(d, {
                       label: "15 分钟",
                       value: 15
                     }),
-                    e.createVNode(u, {
+                    e.createVNode(d, {
                       label: "30 分钟",
                       value: 30
                     })
@@ -795,35 +825,35 @@ const N = /* @__PURE__ */ Q(fe), h = "/api/plugins/mslx-plugin-ddns/ddns", pe = 
             ]),
             e.createElementVNode("h3", { class: "font-bold text-sm mt-2 m-0 flex items-center justify-between text-[var(--td-text-color-primary)]" }, [
               e.createElementVNode("div", { class: "flex items-center gap-1.5" }, [
-                e.createVNode(e.unref(K)),
+                e.createVNode(e.unref(H)),
                 e.createTextVNode(" IPv4 配置 ")
               ]),
-              e.createVNode(_, {
+              e.createVNode($, {
                 modelValue: l.value.ipv4.enable,
-                "onUpdate:modelValue": i[4] || (i[4] = (a) => l.value.ipv4.enable = a)
+                "onUpdate:modelValue": c[4] || (c[4] = (a) => l.value.ipv4.enable = a)
               }, null, 8, ["modelValue"])
             ]),
             l.value.ipv4.enable ? (e.openBlock(), e.createElementBlock("div", {
               key: 0,
-              class: "flex flex-col gap-3 mt-1 p-3 rounded-lg design-card glass-card border border-[var(--td-component-border)]"
+              class: "flex flex-col gap-3 mt-1 p-4 rounded-xl design-card"
             }, [
               e.createElementVNode("div", { class: "grid grid-cols-1 md:grid-cols-2 gap-4" }, [
                 e.createElementVNode("div", { class: "flex flex-col gap-1.5" }, [
                   e.createElementVNode("label", { class: "text-xs font-semibold text-[var(--td-text-color-secondary)]" }, "获取方式"),
                   e.createVNode(V, {
                     modelValue: l.value.ipv4.sourceType,
-                    "onUpdate:modelValue": i[5] || (i[5] = (a) => l.value.ipv4.sourceType = a)
+                    "onUpdate:modelValue": c[5] || (c[5] = (a) => l.value.ipv4.sourceType = a)
                   }, {
                     default: e.withCtx(() => [
-                      e.createVNode(u, {
+                      e.createVNode(d, {
                         label: "API 接口",
                         value: "api"
                       }),
-                      e.createVNode(u, {
+                      e.createVNode(d, {
                         label: "指定网卡",
                         value: "nic"
                       }),
-                      e.createVNode(u, {
+                      e.createVNode(d, {
                         label: "自定义固定 IP",
                         value: "custom"
                       })
@@ -836,9 +866,9 @@ const N = /* @__PURE__ */ Q(fe), h = "/api/plugins/mslx-plugin-ddns/ddns", pe = 
                   class: "flex flex-col gap-1.5"
                 }, [
                   e.createElementVNode("label", { class: "text-xs font-semibold text-[var(--td-text-color-secondary)]" }, "API 地址"),
-                  e.createVNode(k, {
+                  e.createVNode(b, {
                     modelValue: l.value.ipv4.apiUrl,
-                    "onUpdate:modelValue": i[6] || (i[6] = (a) => l.value.ipv4.apiUrl = a),
+                    "onUpdate:modelValue": c[6] || (c[6] = (a) => l.value.ipv4.apiUrl = a),
                     placeholder: "如 https://api.ipify.org",
                     clearable: ""
                   }, null, 8, ["modelValue"])
@@ -849,11 +879,11 @@ const N = /* @__PURE__ */ Q(fe), h = "/api/plugins/mslx-plugin-ddns/ddns", pe = 
                   e.createElementVNode("label", { class: "text-xs font-semibold text-[var(--td-text-color-secondary)]" }, "物理网卡"),
                   e.createVNode(V, {
                     modelValue: l.value.ipv4.nicName,
-                    "onUpdate:modelValue": i[7] || (i[7] = (a) => l.value.ipv4.nicName = a),
+                    "onUpdate:modelValue": c[7] || (c[7] = (a) => l.value.ipv4.nicName = a),
                     placeholder: "请选择网卡"
                   }, {
                     default: e.withCtx(() => [
-                      (e.openBlock(!0), e.createElementBlock(e.Fragment, null, e.renderList(c.value, (a) => (e.openBlock(), e.createBlock(u, {
+                      (e.openBlock(!0), e.createElementBlock(e.Fragment, null, e.renderList(m.value, (a) => (e.openBlock(), e.createBlock(d, {
                         key: a,
                         label: a,
                         value: a
@@ -866,9 +896,9 @@ const N = /* @__PURE__ */ Q(fe), h = "/api/plugins/mslx-plugin-ddns/ddns", pe = 
                   class: "flex flex-col gap-1.5"
                 }, [
                   e.createElementVNode("label", { class: "text-xs font-semibold text-[var(--td-text-color-secondary)]" }, "固定 IP"),
-                  e.createVNode(k, {
+                  e.createVNode(b, {
                     modelValue: l.value.ipv4.customIP,
-                    "onUpdate:modelValue": i[8] || (i[8] = (a) => l.value.ipv4.customIP = a),
+                    "onUpdate:modelValue": c[8] || (c[8] = (a) => l.value.ipv4.customIP = a),
                     placeholder: "输入静态 IP",
                     clearable: ""
                   }, null, 8, ["modelValue"])
@@ -876,9 +906,9 @@ const N = /* @__PURE__ */ Q(fe), h = "/api/plugins/mslx-plugin-ddns/ddns", pe = 
               ]),
               e.createElementVNode("div", { class: "flex flex-col gap-1.5" }, [
                 e.createElementVNode("label", { class: "text-xs font-semibold text-[var(--td-text-color-secondary)]" }, "域名列表 (逗号分隔，支持 @.example.com)"),
-                e.createVNode(k, {
+                e.createVNode(b, {
                   modelValue: l.value.ipv4.domains,
-                  "onUpdate:modelValue": i[9] || (i[9] = (a) => l.value.ipv4.domains = a),
+                  "onUpdate:modelValue": c[9] || (c[9] = (a) => l.value.ipv4.domains = a),
                   placeholder: "如 v4.example.com, @.example.com",
                   clearable: ""
                 }, null, 8, ["modelValue"])
@@ -886,35 +916,35 @@ const N = /* @__PURE__ */ Q(fe), h = "/api/plugins/mslx-plugin-ddns/ddns", pe = 
             ])) : e.createCommentVNode("", !0),
             e.createElementVNode("h3", { class: "font-bold text-sm mt-2 m-0 flex items-center justify-between text-[var(--td-text-color-primary)]" }, [
               e.createElementVNode("div", { class: "flex items-center gap-1.5" }, [
-                e.createVNode(e.unref(K)),
+                e.createVNode(e.unref(H)),
                 e.createTextVNode(" IPv6 配置 ")
               ]),
-              e.createVNode(_, {
+              e.createVNode($, {
                 modelValue: l.value.ipv6.enable,
-                "onUpdate:modelValue": i[10] || (i[10] = (a) => l.value.ipv6.enable = a)
+                "onUpdate:modelValue": c[10] || (c[10] = (a) => l.value.ipv6.enable = a)
               }, null, 8, ["modelValue"])
             ]),
             l.value.ipv6.enable ? (e.openBlock(), e.createElementBlock("div", {
               key: 1,
-              class: "flex flex-col gap-3 mt-1 p-3 rounded-lg design-card glass-card border border-[var(--td-component-border)]"
+              class: "flex flex-col gap-3 mt-1 p-4 rounded-xl design-card"
             }, [
               e.createElementVNode("div", { class: "grid grid-cols-1 md:grid-cols-2 gap-4" }, [
                 e.createElementVNode("div", { class: "flex flex-col gap-1.5" }, [
                   e.createElementVNode("label", { class: "text-xs font-semibold text-[var(--td-text-color-secondary)]" }, "获取方式"),
                   e.createVNode(V, {
                     modelValue: l.value.ipv6.sourceType,
-                    "onUpdate:modelValue": i[11] || (i[11] = (a) => l.value.ipv6.sourceType = a)
+                    "onUpdate:modelValue": c[11] || (c[11] = (a) => l.value.ipv6.sourceType = a)
                   }, {
                     default: e.withCtx(() => [
-                      e.createVNode(u, {
+                      e.createVNode(d, {
                         label: "API 接口",
                         value: "api"
                       }),
-                      e.createVNode(u, {
+                      e.createVNode(d, {
                         label: "指定网卡",
                         value: "nic"
                       }),
-                      e.createVNode(u, {
+                      e.createVNode(d, {
                         label: "自定义固定 IP",
                         value: "custom"
                       })
@@ -927,9 +957,9 @@ const N = /* @__PURE__ */ Q(fe), h = "/api/plugins/mslx-plugin-ddns/ddns", pe = 
                   class: "flex flex-col gap-1.5"
                 }, [
                   e.createElementVNode("label", { class: "text-xs font-semibold text-[var(--td-text-color-secondary)]" }, "API 地址"),
-                  e.createVNode(k, {
+                  e.createVNode(b, {
                     modelValue: l.value.ipv6.apiUrl,
-                    "onUpdate:modelValue": i[12] || (i[12] = (a) => l.value.ipv6.apiUrl = a),
+                    "onUpdate:modelValue": c[12] || (c[12] = (a) => l.value.ipv6.apiUrl = a),
                     placeholder: "如 https://api64.ipify.org",
                     clearable: ""
                   }, null, 8, ["modelValue"])
@@ -940,11 +970,11 @@ const N = /* @__PURE__ */ Q(fe), h = "/api/plugins/mslx-plugin-ddns/ddns", pe = 
                   e.createElementVNode("label", { class: "text-xs font-semibold text-[var(--td-text-color-secondary)]" }, "物理网卡"),
                   e.createVNode(V, {
                     modelValue: l.value.ipv6.nicName,
-                    "onUpdate:modelValue": i[13] || (i[13] = (a) => l.value.ipv6.nicName = a),
+                    "onUpdate:modelValue": c[13] || (c[13] = (a) => l.value.ipv6.nicName = a),
                     placeholder: "请选择网卡"
                   }, {
                     default: e.withCtx(() => [
-                      (e.openBlock(!0), e.createElementBlock(e.Fragment, null, e.renderList(c.value, (a) => (e.openBlock(), e.createBlock(u, {
+                      (e.openBlock(!0), e.createElementBlock(e.Fragment, null, e.renderList(m.value, (a) => (e.openBlock(), e.createBlock(d, {
                         key: a,
                         label: a,
                         value: a
@@ -957,9 +987,9 @@ const N = /* @__PURE__ */ Q(fe), h = "/api/plugins/mslx-plugin-ddns/ddns", pe = 
                   class: "flex flex-col gap-1.5"
                 }, [
                   e.createElementVNode("label", { class: "text-xs font-semibold text-[var(--td-text-color-secondary)]" }, "固定 IP"),
-                  e.createVNode(k, {
+                  e.createVNode(b, {
                     modelValue: l.value.ipv6.customIP,
-                    "onUpdate:modelValue": i[14] || (i[14] = (a) => l.value.ipv6.customIP = a),
+                    "onUpdate:modelValue": c[14] || (c[14] = (a) => l.value.ipv6.customIP = a),
                     placeholder: "输入静态 IP",
                     clearable: ""
                   }, null, 8, ["modelValue"])
@@ -967,19 +997,19 @@ const N = /* @__PURE__ */ Q(fe), h = "/api/plugins/mslx-plugin-ddns/ddns", pe = 
               ]),
               e.createElementVNode("div", { class: "flex flex-col gap-1.5" }, [
                 e.createElementVNode("label", { class: "text-xs font-semibold text-[var(--td-text-color-secondary)]" }, "域名列表 (逗号分隔，支持 @.example.com)"),
-                e.createVNode(k, {
+                e.createVNode(b, {
                   modelValue: l.value.ipv6.domains,
-                  "onUpdate:modelValue": i[15] || (i[15] = (a) => l.value.ipv6.domains = a),
+                  "onUpdate:modelValue": c[15] || (c[15] = (a) => l.value.ipv6.domains = a),
                   placeholder: "如 v6.example.com, @.example.com",
                   clearable: ""
                 }, null, 8, ["modelValue"])
               ])
             ])) : e.createCommentVNode("", !0),
             e.createElementVNode("div", { class: "mt-3 flex justify-end" }, [
-              e.createVNode(T, {
+              e.createVNode(M, {
                 theme: "primary",
-                onClick: x,
-                loading: m.value,
+                onClick: n,
+                loading: f.value,
                 shape: "round",
                 class: "w-full md:w-auto px-6"
               }, {
@@ -992,10 +1022,10 @@ const N = /* @__PURE__ */ Q(fe), h = "/api/plugins/mslx-plugin-ddns/ddns", pe = 
           ]),
           e.createElementVNode("div", { class: "lg:col-span-2 flex flex-col gap-4 border-t lg:border-t-0 lg:border-l border-zinc-200/60 dark:border-zinc-700/60 pt-4 lg:pt-0 lg:pl-6" }, [
             e.createElementVNode("h3", { class: "font-bold text-sm m-0 flex items-center gap-1.5 text-[var(--td-text-color-primary)]" }, [
-              e.createVNode(e.unref(se)),
+              e.createVNode(e.unref(ce)),
               e.createTextVNode(" 运行状态 ")
             ]),
-            e.createElementVNode("div", { class: "rounded-xl p-4 design-card glass-card border border-[var(--td-component-border)] flex flex-col gap-3 shadow-inner" }, [
+            e.createElementVNode("div", { class: "rounded-xl p-4 design-card flex flex-col gap-3" }, [
               e.createElementVNode("div", { class: "flex justify-between items-center mb-2" }, [
                 e.createElementVNode("span", { class: "text-xs text-[var(--td-text-color-secondary)]" }, "DDNS 当前状态")
               ]),
@@ -1011,25 +1041,25 @@ const N = /* @__PURE__ */ Q(fe), h = "/api/plugins/mslx-plugin-ddns/ddns", pe = 
                   class: "flex flex-col"
                 }, [
                   e.createElementVNode("span", { class: "text-xs text-[var(--td-text-color-secondary)] font-semibold" }, "IPv4 地址"),
-                  e.createElementVNode("span", { class: "text-sm font-mono tracking-tight font-bold text-[var(--color-primary)] break-all" }, e.toDisplayString(r.value.currentIP4 || "--"), 1)
+                  e.createElementVNode("span", { class: "text-sm font-mono tracking-tight font-bold text-[var(--color-primary)] break-all" }, e.toDisplayString(i.value.currentIP4 || "--"), 1)
                 ])) : e.createCommentVNode("", !0),
                 l.value.ipv6.enable ? (e.openBlock(), e.createElementBlock("div", {
                   key: 2,
                   class: "flex flex-col"
                 }, [
                   e.createElementVNode("span", { class: "text-xs text-[var(--td-text-color-secondary)] font-semibold" }, "IPv6 地址"),
-                  e.createElementVNode("span", { class: "text-sm font-mono tracking-tight font-bold text-[var(--color-success)] break-all" }, e.toDisplayString(r.value.currentIP6 || "--"), 1)
+                  e.createElementVNode("span", { class: "text-sm font-mono tracking-tight font-bold text-[var(--color-success)] break-all" }, e.toDisplayString(i.value.currentIP6 || "--"), 1)
                 ])) : e.createCommentVNode("", !0)
               ])
             ]),
             e.createElementVNode("div", { class: "flex flex-col gap-2.5 text-xs" }, [
               e.createElementVNode("div", { class: "flex justify-between" }, [
                 e.createElementVNode("span", { class: "text-[var(--td-text-color-secondary)]" }, "上次同步时间"),
-                e.createElementVNode("span", { class: "font-medium font-mono" }, e.toDisplayString(n(r.value.lastSuccessTime)), 1)
+                e.createElementVNode("span", { class: "font-medium font-mono" }, e.toDisplayString(_(i.value.lastSuccessTime)), 1)
               ]),
               e.createElementVNode("div", { class: "flex justify-between" }, [
                 e.createElementVNode("span", { class: "text-[var(--td-text-color-secondary)]" }, "上次检查时间"),
-                e.createElementVNode("span", { class: "font-medium font-mono" }, e.toDisplayString(n(r.value.lastRunTime)), 1)
+                e.createElementVNode("span", { class: "font-medium font-mono" }, e.toDisplayString(_(i.value.lastRunTime)), 1)
               ])
             ]),
             e.createElementVNode("div", { class: "flex flex-col gap-1.5 mt-1" }, [
@@ -1041,38 +1071,38 @@ const N = /* @__PURE__ */ Q(fe), h = "/api/plugins/mslx-plugin-ddns/ddns", pe = 
                 }, "刷新")
               ]),
               e.createElementVNode("div", { class: "h-32 overflow-y-auto p-2 rounded-lg bg-zinc-900/90 text-zinc-300 font-mono text-[11px] leading-relaxed select-text border border-zinc-700/40" }, [
-                o.value.length === 0 ? (e.openBlock(), e.createElementBlock("div", {
+                v.value.length === 0 ? (e.openBlock(), e.createElementBlock("div", {
                   key: 0,
                   class: "text-zinc-500 text-center py-4"
                 }, "暂无运行日志")) : e.createCommentVNode("", !0),
-                (e.openBlock(!0), e.createElementBlock(e.Fragment, null, e.renderList(o.value, (a, J) => (e.openBlock(), e.createElementBlock("div", {
-                  key: J,
+                (e.openBlock(!0), e.createElementBlock(e.Fragment, null, e.renderList(v.value, (a, Y) => (e.openBlock(), e.createElementBlock("div", {
+                  key: Y,
                   class: e.normalizeClass(["whitespace-pre-wrap break-all py-0.5 border-b border-zinc-800/50 last:border-none", { "text-red-400 font-semibold": a.includes("[ERROR]"), "text-emerald-400": a.includes("变化") || a.includes("更新记录") }])
                 }, e.toDisplayString(a), 3))), 128))
               ])
             ]),
-            r.value.lastErrorMessage ? (e.openBlock(), e.createElementBlock("div", {
+            i.value.lastErrorMessage ? (e.openBlock(), e.createElementBlock("div", {
               key: 0,
               class: "p-3 rounded-xl bg-red-50 dark:bg-red-950/20 border border-red-200/50 dark:border-red-900/30 text-xs text-red-600 dark:text-red-400 leading-normal flex flex-col gap-1 shadow-sm"
             }, [
               e.createElementVNode("span", { class: "font-bold flex items-center gap-1.5" }, [
-                e.createVNode(e.unref(ce), { class: "text-red-500" }),
+                e.createVNode(e.unref(ue), { class: "text-red-500" }),
                 e.createTextVNode(" 上次同步异常: ")
               ]),
-              e.createElementVNode("span", { class: "font-mono break-all" }, e.toDisplayString(r.value.lastErrorMessage), 1)
+              e.createElementVNode("span", { class: "font-mono break-all" }, e.toDisplayString(i.value.lastErrorMessage), 1)
             ])) : e.createCommentVNode("", !0),
             e.createElementVNode("div", { class: "mt-auto pt-3" }, [
-              e.createVNode(T, {
+              e.createVNode(M, {
                 theme: "primary",
                 variant: "outline",
-                onClick: b,
-                loading: r.value.isRunning,
-                disabled: r.value.isRunning,
+                onClick: u,
+                loading: i.value.isRunning,
+                disabled: i.value.isRunning,
                 shape: "round",
                 class: "w-full font-bold"
               }, {
                 default: e.withCtx(() => [
-                  e.createTextVNode(e.toDisplayString(r.value.isRunning ? "同步中..." : "立即同步"), 1)
+                  e.createTextVNode(e.toDisplayString(i.value.isRunning ? "同步中..." : "立即同步"), 1)
                 ]),
                 _: 1
               }, 8, ["loading", "disabled"])
@@ -1082,12 +1112,12 @@ const N = /* @__PURE__ */ Q(fe), h = "/api/plugins/mslx-plugin-ddns/ddns", pe = 
       ]);
     };
   }
-}), Ce = (t, l) => {
-  const r = t.__vccOpts || t;
-  for (const [o, c] of l)
-    r[o] = c;
-  return r;
-}, ye = /* @__PURE__ */ Ce(pe, [["__scopeId", "data-v-133b61a8"]]), ge = {
+}), ge = (t, r) => {
+  const o = t.__vccOpts || t;
+  for (const [l, i] of r)
+    o[l] = i;
+  return o;
+}, xe = /* @__PURE__ */ ge(ye, [["__scopeId", "data-v-21d20a17"]]), ke = {
   name: "DDNSPlugin",
   version: "1.0.0",
   // 注入路由
@@ -1097,11 +1127,11 @@ const N = /* @__PURE__ */ Q(fe), h = "/api/plugins/mslx-plugin-ddns/ddns", pe = 
     {
       slot: "settings-daemon-bottom",
       // 注入到 设置-系统设置 页面的最下方
-      component: ye
+      component: xe
       // 绑定 DDNS 设置面板
     }
   ]
 };
 export {
-  ge as pluginConfig
+  ke as pluginConfig
 };

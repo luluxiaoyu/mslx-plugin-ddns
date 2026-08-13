@@ -5,7 +5,7 @@ namespace MSLX.Plugin.DDNS.Models;
 public class DDNSConfig
 {
     [Required]
-    [AllowedValues("dnspod", "tencentcloud", "aliyun", ErrorMessage = "不支持的 DNS 服务商")]
+    [AllowedValues("dnspod", "tencentcloud", "aliyun", "cloudflare", "huaweicloud", ErrorMessage = "不支持的 DNS 服务商")]
     public string Provider { get; set; } = "dnspod";
     
     public string SecretId { get; set; } = "";

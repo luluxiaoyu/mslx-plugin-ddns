@@ -14,7 +14,7 @@ public class MSLXPluginEntry : IPlugin
     public string Id => "mslx-plugin-ddns"; 
     public string Name => "DDNS 动态域名解析";
     public string Description => "将本机的 IPv4/IPv6 动态更新到指定的域名解析上，支持 DNSPod、腾讯云、阿里云。";
-    public string Version => "1.0.0";
+    public string Version => "1.0.1";
     public string Icon => "jfl_icon.gif";
     public string MinSDKVersion => "1.5.2";
     public string Developer => "xiaoyu";
