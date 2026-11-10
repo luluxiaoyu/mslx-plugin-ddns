@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace MSLX.Plugin.DDNS.Controllers;
 
-[Route("api/plugins/mslx-plugin-ddns/ddns")]
+[Route("api/plugin/mslx-plugin-ddns/ddns")]
 [ApiController]
 public class DDNSController : ControllerBase
 {
@@ -37,6 +37,7 @@ public class DDNSController : ControllerBase
         }
 
         ConfigHelper.Save(config);
+        DDNSService.WakeUp();
 
         DDNSLogger.LogInfo("插件配置已保存", toSystemLog: true);
         return Ok(new { msg = "success" });
@@ -66,7 +67,7 @@ public class DDNSController : ControllerBase
         DDNSLogger.LogInfo("用户手动触发 IP 同步检查", toSystemLog: true);
         Task.Run(async () =>
         {
-            await DDNSService.RunSyncAsync();
+            await DDNSService.RunSyncAsync(force: true);
         });
         
         return Ok(new { msg = "ok" });

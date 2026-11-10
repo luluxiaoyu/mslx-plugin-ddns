@@ -13,25 +13,30 @@ public static class DDNSLogger
     private static readonly object _fileLock = new();
     private const int MaxLogCount = 100;
 
-    private static string GetLogFilePath()
+    private static string? GetLogFilePath()
     {
         try
         {
             var dataPath = MSLXPluginEntry.Instance?.Config()?.GetDataPath();
             if (!string.IsNullOrEmpty(dataPath))
             {
-                if (!Directory.Exists(dataPath))
+                var fullBasePath = Path.GetFullPath(dataPath);
+                if (!Directory.Exists(fullBasePath))
                 {
-                    Directory.CreateDirectory(dataPath);
+                    Directory.CreateDirectory(fullBasePath);
                 }
-                return Path.Combine(dataPath, "ddns.log");
+                var targetPath = Path.GetFullPath(Path.Combine(fullBasePath, "ddns.log"));
+                if (targetPath.StartsWith(fullBasePath, StringComparison.OrdinalIgnoreCase))
+                {
+                    return targetPath;
+                }
             }
         }
         catch
         {
             // fallback if DataPath fails
         }
-        return Path.Combine(AppContext.BaseDirectory, "ddns.log");
+        return null;
     }
 
     public static void LogInfo(string message, bool toSystemLog = false)
@@ -64,9 +69,13 @@ public static class DDNSLogger
         // 异步写入或简单写文件
         try
         {
-            lock (_fileLock)
+            var logPath = GetLogFilePath();
+            if (logPath != null)
             {
-                File.AppendAllLines(GetLogFilePath(), new[] { logLine });
+                lock (_fileLock)
+                {
+                    File.AppendAllLines(logPath, new[] { logLine });
+                }
             }
         }
         catch

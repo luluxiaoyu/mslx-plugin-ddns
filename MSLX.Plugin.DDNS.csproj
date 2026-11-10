@@ -19,7 +19,7 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.Extensions.FileProviders.Embedded" Version="10.0.7" />
-    <PackageReference Include="MSLX.SDK" Version="1.5.4" ExcludeAssets="runtime" />
+    <PackageReference Include="MSLX.SDK" Version="1.7.6" ExcludeAssets="runtime" />
     <PackageReference Include="TencentCloudSDK.Dnspod" Version="3.0.1459" />
   </ItemGroup>
 

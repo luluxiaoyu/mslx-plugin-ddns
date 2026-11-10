@@ -290,7 +290,9 @@ interface DDNSStatus {
   currentIP6: string;
 }
 
-const BASE_URL = '/api/plugins/mslx-plugin-ddns/ddns';
+const BASE_URL = '/api/plugin/mslx-plugin-ddns/ddns';
+const nodeContext = (window as any).MSLX_NodeContext?.use?.();
+const http = nodeContext?.request || request;
 
 const idLabel = computed(() => {
   switch(config.value.provider) {
@@ -336,7 +338,7 @@ const isKeyConfigured = ref(false);
 
 const fetchConfig = async () => {
   try {
-    const res = await request.get({ url: `${BASE_URL}/config` });
+    const res = await http.get({ url: `${BASE_URL}/config` });
     if (res) {
       config.value = {
         ...config.value,
@@ -359,7 +361,7 @@ const fetchConfig = async () => {
 
 const fetchNics = async () => {
   try {
-    const res = await request.get({ url: `${BASE_URL}/nics` });
+    const res = await http.get({ url: `${BASE_URL}/nics` });
     if (res) {
       nics.value = res;
     }
@@ -370,7 +372,7 @@ const fetchNics = async () => {
 
 const fetchStatus = async () => {
   try {
-    const res = await request.get({ url: `${BASE_URL}/status` });
+    const res = await http.get({ url: `${BASE_URL}/status` });
     if (res) {
       status.value = res;
     }
@@ -381,7 +383,7 @@ const fetchStatus = async () => {
 
 const fetchLogs = async () => {
   try {
-    const res = await request.get({ url: `${BASE_URL}/logs` });
+    const res = await http.get({ url: `${BASE_URL}/logs` });
     if (res && Array.isArray(res)) {
       logs.value = res;
     }
@@ -393,7 +395,7 @@ const fetchLogs = async () => {
 const saveSettings = async () => {
   try {
     saving.value = true;
-    await request.post({
+    await http.post({
       url: `${BASE_URL}/save-config`,
       data: config.value
     });
@@ -409,7 +411,7 @@ const saveSettings = async () => {
 
 const triggerRequestNow = async () => {
   try {
-    await request.post({ url: `${BASE_URL}/request-now` });
+    await http.post({ url: `${BASE_URL}/request-now` });
     MessagePlugin.success('同步任务已启动！');
     fetchStatus();
     fetchLogs();

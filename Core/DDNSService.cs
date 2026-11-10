@@ -10,15 +10,56 @@ using MSLX.SDK;
 
 namespace MSLX.Plugin.DDNS.Core;
 
-public class DDNSService : BackgroundService
+public class DDNSService
 {
-    private static DDNSStatus _status = new DDNSStatus();
+    private static readonly DDNSStatus _status = new DDNSStatus();
     public static DDNSStatus CurrentStatus => _status;
 
-    public static async Task RunSyncAsync()
+    private static readonly object _lifecycleLock = new();
+    private static CancellationTokenSource? _lifetimeCts;
+    private static Task? _backgroundTask;
+    private static volatile TaskCompletionSource<bool> _wakeTcs = new(TaskCreationOptions.RunContinuationsAsynchronously);
+    private static readonly SemaphoreSlim _syncLock = new(1, 1);
+
+    public static void Start()
     {
-        _status.IsRunning = true;
-        _status.LastRunTime = DateTime.Now;
+        lock (_lifecycleLock)
+        {
+            if (_lifetimeCts != null) return;
+            _lifetimeCts = new CancellationTokenSource();
+            _backgroundTask = Task.Run(() => RunLoopAsync(_lifetimeCts.Token));
+            DDNSLogger.LogInfo("DDNS 定时同步后台任务已启动", toSystemLog: true);
+        }
+    }
+
+    public static void Stop()
+    {
+        lock (_lifecycleLock)
+        {
+            if (_lifetimeCts == null) return;
+            _lifetimeCts.Cancel();
+            WakeUp();
+            try { _backgroundTask?.Wait(TimeSpan.FromSeconds(3)); } catch { }
+            _lifetimeCts.Dispose();
+            _lifetimeCts = null;
+            _backgroundTask = null;
+            DDNSLogger.LogInfo("DDNS 定时同步后台任务已停止", toSystemLog: true);
+        }
+    }
+
+    public static void WakeUp()
+    {
+        _wakeTcs.TrySetResult(true);
+    }
+
+    public static async Task RunSyncAsync(bool force = false, CancellationToken ct = default)
+    {
+        if (!await _syncLock.WaitAsync(0, ct))
+        {
+            DDNSLogger.LogInfo("同步任务已在执行中，跳过本次触发", toSystemLog: false);
+            return;
+        }
+
         _status.IsRunning = true;
         _status.LastRunTime = DateTime.Now;
         DDNSLogger.LogInfo("开始执行 IP 同步检查任务", toSystemLog: false);
@@ -46,7 +87,7 @@ public class DDNSService : BackgroundService
                 string ip = await GetIP(config.IPv4, System.Net.Sockets.AddressFamily.InterNetwork);
                 if (!string.IsNullOrEmpty(ip))
                 {
-                    if (_status.CurrentIP4 != ip)
+                    if (force || _status.CurrentIP4 != ip)
                     {
                         DDNSLogger.LogInfo($"检测到 IPv4 地址变化: {_status.CurrentIP4 ?? "无"} -> {ip}，准备更新解析记录", toSystemLog: true);
                         _status.CurrentIP4 = ip;
@@ -70,7 +111,7 @@ public class DDNSService : BackgroundService
                 string ip = await GetIP(config.IPv6, System.Net.Sockets.AddressFamily.InterNetworkV6);
                 if (!string.IsNullOrEmpty(ip))
                 {
-                    if (_status.CurrentIP6 != ip)
+                    if (force || _status.CurrentIP6 != ip)
                     {
                         DDNSLogger.LogInfo($"检测到 IPv6 地址变化: {_status.CurrentIP6 ?? "无"} -> {ip}，准备更新解析记录", toSystemLog: true);
                         _status.CurrentIP6 = ip;
@@ -98,6 +139,7 @@ public class DDNSService : BackgroundService
         finally
         {
             _status.IsRunning = false;
+            _syncLock.Release();
         }
     }
 
@@ -153,19 +195,44 @@ public class DDNSService : BackgroundService
         }
     }
 
-    protected override async Task ExecuteAsync(CancellationToken stoppingToken)
+    private static async Task RunLoopAsync(CancellationToken stoppingToken)
     {
         while (!stoppingToken.IsCancellationRequested)
         {
-            var config = ConfigHelper.Load();
-            
-            if (!string.IsNullOrEmpty(config.SecretId) && !string.IsNullOrEmpty(config.SecretKey))
+            try
             {
-                await RunSyncAsync();
+                var config = ConfigHelper.Load();
+                if (IsConfigured(config))
+                {
+                    await RunSyncAsync(force: false, stoppingToken);
+                }
+
+                int interval = config.SyncInterval > 0 ? config.SyncInterval : 5;
+                var currentTcs = _wakeTcs;
+                var delayTask = Task.Delay(TimeSpan.FromMinutes(interval), stoppingToken);
+                var completedTask = await Task.WhenAny(delayTask, currentTcs.Task);
+                if (completedTask == currentTcs.Task)
+                {
+                    Interlocked.CompareExchange(ref _wakeTcs, new TaskCompletionSource<bool>(TaskCreationOptions.RunContinuationsAsynchronously), currentTcs);
+                }
             }
-            
-            int interval = config.SyncInterval > 0 ? config.SyncInterval : 5;
-            await Task.Delay(TimeSpan.FromMinutes(interval), stoppingToken);
+            catch (OperationCanceledException) when (stoppingToken.IsCancellationRequested)
+            {
+                break;
+            }
+            catch (Exception ex)
+            {
+                DDNSLogger.LogError($"后台调度异常: {ex.Message}");
+                try { await Task.Delay(TimeSpan.FromSeconds(10), stoppingToken); } catch { }
+            }
         }
+    }
+
+    private static bool IsConfigured(DDNSConfig config)
+    {
+        if (!config.IPv4.Enable && !config.IPv6.Enable) return false;
+        if (string.IsNullOrEmpty(config.SecretKey)) return false;
+        if (config.Provider != "cloudflare" && string.IsNullOrEmpty(config.SecretId)) return false;
+        return true;
     }
 }

@@ -9,10 +9,11 @@ namespace MSLX.Plugin.DDNS.Core;
 
 public static class IPHelper
 {
+    private static readonly HttpClient _httpClient = new() { Timeout = TimeSpan.FromSeconds(10) };
+
     public static async Task<string> GetIPFromApiAsync(string url)
     {
-        using var client = new HttpClient();
-        var resp = await client.GetStringAsync(url);
+        var resp = await _httpClient.GetStringAsync(url);
         return resp.Trim();
     }
 
